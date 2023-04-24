@@ -1,0 +1,7 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+.MainPage {
+    min-height: min(100vh, 600px);
+    width: 100%;
+    @include flex(center, center, row)
+}

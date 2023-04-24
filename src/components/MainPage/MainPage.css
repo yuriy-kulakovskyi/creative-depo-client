@@ -1,0 +1,10 @@
+.MainPage {
+  min-height: min(100vh, 600px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+/*# sourceMappingURL=MainPage.css.map */
