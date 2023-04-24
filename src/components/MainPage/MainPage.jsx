@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { register } from 'swiper/element/bundle';
 
 import nextSvg from "./images/next.svg"
@@ -29,6 +30,12 @@ const slidesData = [
 ]
 
 function MainPage() {
+    let [needToRz, setNeedToRz] = useState(!(window.innerWidth >= 800))
+    useEffect(()=>{
+        window.addEventListener("resize", function(){
+            setNeedToRz(!(window.innerWidth >= 800))
+        })
+    }, [])
     return (
         <section className="MainPage">
             <div className="MainPage-slider-container">
@@ -58,13 +65,25 @@ function MainPage() {
                         <img className="MainPage-slider-btn-svg" src={prevSvg} alt="previous slide button" />
                     </div>
                     {
-                        slidesData.map(item =>
-                            <swiper-slide key={item.id}>
-                                <div className="MainPage-slide-inner">
-                                    <img src={item.image} alt={`Slide${item.id}`} />
-                                </div>
-                            </swiper-slide>
-                        )
+                        function(){
+                            if (window.innerWidth >= 800) {
+                                return slidesData.map(item =>
+                                    <swiper-slide key={item.id}>
+                                        <div className="MainPage-slide-inner">
+                                            <img src={item.image} alt={`Slide${item.id}`} />
+                                        </div>
+                                    </swiper-slide>
+                                )
+                            } else {
+                                return slidesData.map(item =>
+                                    <swiper-slide key={item.id}>
+                                        <div className="MainPage-slide-inner">
+                                            <img src={item.imageForPhones} alt={`Slide${item.id}`} />
+                                        </div>
+                                    </swiper-slide>
+                                )
+                            }
+                        }()
                     }
                     <div className="MainPage-slider-btn MainPage-slider-btn-next">
                         <img className="MainPage-slider-btn-svg" src={nextSvg} alt="next slide button" />

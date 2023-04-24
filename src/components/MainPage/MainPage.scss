@@ -3,6 +3,7 @@
 .MainPage {
     min-height: 100vh;
     width: 100%;
+    background: $bgBlack;
     @include flex(center, center, row);
     .MainPage-slider-container {
         height: 100vh;
@@ -90,6 +91,22 @@
             -moz-border-radius: 50%;
             -ms-border-radius: 50%;
             -o-border-radius: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .MainPage {
+        .MainPage-slider-container {
+            .MainPage-slider-btn-previous {
+                left: 20px;
+            }
+            .MainPage-slider-btn-next {
+                right: 20px;
+            }
+            .MainPage-slider-pagination {
+                bottom: 20px;
+            }
         }
     }
 }
