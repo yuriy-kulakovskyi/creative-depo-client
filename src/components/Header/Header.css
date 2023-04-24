@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  color: #ffffff;
+  height: 10vh;
+  width: 100%;
+  padding: 0px 30px;
+  position: fixed;
+  transition: 1s;
+  z-index: 5;
+}
+.header .header__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  font-weight: 600;
+  user-select: none;
+  margin-bottom: 10px;
+}
+.header .header__logo .header__logo__letters {
+  font-size: 44px;
+  margin-right: 10px;
+}
+.header .header__logo__text {
+  text-transform: uppercase;
+}
+.header .header__right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.header .header__right .header__right__el {
+  user-select: none;
+  margin: 0 15px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.header .header__right .header__right__el:hover {
+  color: #fb472e;
+}
+
+/*# sourceMappingURL=Header.css.map */

@@ -1,0 +1,50 @@
+@import '../mixins.scss';
+@import "../variables.scss";
+$fontSizeHeaderEl:16px;
+$colorHeaderElementColor:#fb472e;
+
+.header{
+    @include flex(space-between,center,row);
+    // background-color: $bgBlack;
+    color: $white;
+    height: 10vh;
+    width: 100%;
+    padding: 0px 30px;
+    position: fixed;
+    transition: 1s;
+    z-index: 5;
+    
+//  margin-top: -10vh;
+ 
+ 
+   
+    .header__logo{
+        @include flex(space-between,center,row);
+      
+       font-weight: 600;
+       user-select: none;
+       margin-bottom: 10px;
+       .header__logo__letters{
+        font-size: 44px;
+        margin-right: 10px;
+
+       }
+    }
+    .header__logo__text{
+        text-transform: uppercase;
+    }
+    .header__right{
+        @include flex(space-between,center,row);
+      .header__right__el{
+        user-select: none;
+        margin: 0 15px;
+        font-weight: 600;
+        font-size: $fontSizeHeaderEl;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover{
+            color: $colorHeaderElementColor;
+        }
+      }
+    }
+}
