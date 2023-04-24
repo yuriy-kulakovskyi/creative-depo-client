@@ -1,5 +1,7 @@
+import { register } from 'swiper/element/bundle';
 import "./MainPage.css"
 
+register();
 const slidesData = [
     {
         id: 1,
