@@ -1,1 +1,7 @@
-{"version":3,"sourceRoot":"","sources":["Footer.scss","../variables.scss"],"names":[],"mappings":"AAGA;EACI;EACA;EACA,kBCHQ","file":"Footer.css"}
+{
+"version": 3,
+"mappings": "AAGA,OAAQ;EACJ,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,gBAAgB,ECFR,OAAO",
+"sources": ["Footer.scss","../variables.scss"],
+"names": [],
+"file": "Footer.css"
+}

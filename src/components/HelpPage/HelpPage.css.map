@@ -1,1 +1,7 @@
-{"version":3,"sourceRoot":"","sources":["HelpPage.scss","../variables.scss"],"names":[],"mappings":"AAGA;EACI;EACA;EACA,kBCJM","file":"HelpPage.css"}
+{
+"version": 3,
+"mappings": "AAGA,SAAU;EACN,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,gBAAgB,ECHV,OAAO",
+"sources": ["HelpPage.scss","../variables.scss"],
+"names": [],
+"file": "HelpPage.css"
+}

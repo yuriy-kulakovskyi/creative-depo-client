@@ -1,5 +1,4 @@
 import './HelpPage.css'
-import './HelpPage.scss';
 
 
 function HelpPage() {
