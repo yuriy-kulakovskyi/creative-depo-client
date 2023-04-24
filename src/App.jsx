@@ -8,6 +8,7 @@ function App() {
   return (
     <div className="App">
       {/* The place to hold components */}
+      
       {/* Header component */}
       <Header/>
       {/* MainPage component */}
