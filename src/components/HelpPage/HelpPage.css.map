@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AAGA,SAAU;EACN,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,gBAAgB,ECHV,OAAO",
-"sources": ["HelpPage.scss","../variables.scss"],
-"names": [],
-"file": "HelpPage.css"
-}
+{"version":3,"sourceRoot":"","sources":["HelpPage.scss","../variables.scss"],"names":[],"mappings":"AAGA;EACI;EACA;EACA,kBCHM;EDIN;EACA;EACA;;AAEA;EACI;EACA;EACA,kBCXE;EDYF;EACA;;AAEA;EACI;EACA;EACA,kBClBF;EDmBE;EACA;EACA;;AAGA;EACI;EACA;EAEA,kBC5BN;;AD8BM;EACI;EACA,aC9BP;ED+BO;EACA;;AAQR;EACI;EACA;EAEA,kBC9CN;ED+CM;EACA;EACA;;AAGA;EACI,kBClDb;EDmDa;EACA;EACA;;AAKJ;EACI;EACA;EACA,aC9DP;ED+DO;EACA;EACA;;AAQR;EACI;EACA;EACA","file":"HelpPage.css"}

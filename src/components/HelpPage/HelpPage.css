@@ -1,6 +1,63 @@
 .HelpPage {
   width: 100%;
   height: 100vh;
-  background-color: #131313; }
+  background-color: #131313;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.HelpPage .HelpPage__Container {
+  width: 80%;
+  height: 80vh;
+  background-color: #131313;
+  display: flex;
+  justify-content: space-around;
+}
+.HelpPage .HelpPage__Container .HelpPage__cont__block {
+  height: 80vh;
+  width: 46%;
+  background-color: #131313;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.HelpPage .HelpPage__Container .HelpPage__cont__block .cont__block__one {
+  width: 90%;
+  height: 100px;
+  background-color: #131313;
+}
+.HelpPage .HelpPage__Container .HelpPage__cont__block .cont__block__one .HelpPage__span {
+  color: white;
+  font-family: "Manrope", sans-serif;
+  font-size: 37px;
+  font-weight: 800;
+}
+.HelpPage .HelpPage__Container .HelpPage__cont__block .cont__block__two {
+  width: 64%;
+  height: 90px;
+  background-color: #131313;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.HelpPage .HelpPage__Container .HelpPage__cont__block .cont__block__two .blue__line {
+  background-color: #639bf0;
+  height: 59px;
+  width: 5px;
+  float: left;
+}
+.HelpPage .HelpPage__Container .HelpPage__cont__block .cont__block__two .HelpPage__two__text {
+  font-size: 24px;
+  color: white;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  position: relative;
+  left: 10px;
+}
+.HelpPage .HelpPage__Container .HelpPage__cont__block .cont__block__three {
+  width: 60%;
+  height: 300px;
+  background-color: azure;
+}
 
 /*# sourceMappingURL=HelpPage.css.map */

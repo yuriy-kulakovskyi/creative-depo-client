@@ -1,0 +1,67 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+.Navigation{
+    width: 1160px;
+    height: 49px;
+    background-color: $white;
+    @include flex('','', row);
+    .children__NavigationBtn{
+        width: 232px;
+        padding: 10px;
+        height: 49px;
+        font-family: $fontFamily;
+        font-style: normal;
+        transition-duration: 0.1s;
+        line-height: 20px;
+        text-transform: uppercase;
+        @include font(15px, 600, "");
+        @include flex(center,center,row);
+        cursor: pointer;
+        &:hover{
+            color: $red;
+            transition: 0.2s;
+        }
+    }
+    @media only screen and (max-width:1200px){
+        width:1000px;
+        .children__NavigationBtn{
+            width: 200px;
+        }
+    }
+    @media only screen and (max-width:1100px){
+        width:800px;
+        .children__NavigationBtn{
+            width: 160px;
+        }
+    }
+    @media only screen and (max-width:822px){
+        width:650px;
+        .children__NavigationBtn{
+            width: 130px;
+        }
+    }
+    @media only screen and (max-width:685px){
+        width:500px;
+        .children__NavigationBtn{
+            width: 100px;
+        }
+    }
+    @media only screen and (max-width:550px){
+        width:400px;
+        .children__NavigationBtn{
+            width: 80px;
+            @include font(12px, 600, "");
+        }
+    }
+    @media only screen and (max-width:460px){
+        width:350px;
+        .children__NavigationBtn{
+            width: 70px;
+            @include font(11px, 600, "");
+        }
+    }
+}
+.Content__Navigation{
+    margin-top: 30px;
+}
