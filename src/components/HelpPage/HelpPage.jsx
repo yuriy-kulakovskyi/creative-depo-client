@@ -24,6 +24,22 @@ function HelpPage() {
 
                     </div>
                     <div className="cont__block__three">
+                        <div className="yelow__line"></div>
+                        <div className="block__three__container">
+                            <div className="three__cont__one">
+                                <p className='cont__one__text'> Нижче є фото бронежилетів, які були виготовлені <br />
+                                    завдяки вашим замовленням.</p>
+                            </div>
+                            <div className="three__cont__two">
+                                <p className='cont__two__text'>Плити 4 класу, покриті протисколковим та <br />
+                                    демпферним покриттям. Плитоноска важить 1,5 кг + <br />
+                                    2 плити по 3кг, загалом — 7,5 кг, шо є досить <br />
+                                    комфортним для тривалого використання <br />
+                                    військовими.</p>
+
+                            </div>
+
+                        </div>
 
 
 

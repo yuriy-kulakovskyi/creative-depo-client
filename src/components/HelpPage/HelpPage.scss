@@ -10,7 +10,7 @@
     align-items: center;
 
     .HelpPage__Container {
-        width: 80%;
+        width: 85%;
         height: 80vh;
         background-color: $bgBlack;
         display: flex;
@@ -68,7 +68,7 @@
                     font-family: $fontFamily;
                     font-weight: 500;
                     position: relative;
-                    left: 10px;
+                    left: 0;
                 }
 
 
@@ -77,9 +77,72 @@
             }
 
             .cont__block__three {
-                width: 60%;
+                width: 87%;
                 height: 300px;
-                background-color: azure;
+                background-color: $bgBlack;
+                display: flex;
+                justify-content: space-around;
+
+
+
+                .block__three__container {
+                    width: 100%;
+                    background-color: $bgBlack;
+                    height: 300px;
+                    position: relative;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    left: 5px;
+
+                    .three__cont__one {
+                        height: 90px;
+                        width: 115%;
+
+                        background-color: $bgBlack;
+                        position: relative;
+                        left: 12px;
+
+                        .cont__one__text {
+                            font-size: 24px;
+                            color: white;
+                            font-family: $fontFamily;
+                            font-weight: 500;
+
+                        }
+                    }
+
+                    .three__cont__two {
+                        width: 118%;
+                        height: 220px;
+                        background-color: $bgBlack;
+                        line-height: 38px;
+
+
+                        .cont__two__text {
+                            font-size: 24px;
+                            color: white;
+                            font-family: $fontFamily;
+                            font-weight: 500;
+                            position: relative;
+                            left: 10px;
+                            top: 15px;
+
+
+                        }
+
+                    }
+
+                }
+
+                .yelow__line {
+                    height: 287px;
+                    background-color: $yellow;
+                    width: 5px;
+                    position: relative;
+                    left: 5px;
+
+                }
             }
 
         }
