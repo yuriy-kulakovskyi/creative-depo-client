@@ -1,0 +1,29 @@
+[{
+        "id": 1,
+        "image": "./HelpSlider/1.jpg"
+    },
+    {
+        "id": 2,
+        "image": "./HelpSlider/2.jpg"
+    },
+    {
+        "id": 3,
+        "image": "./HelpSlider/3.jpg"
+    },
+    {
+        "id": 4,
+        "image": "./HelpSlider/4.jpg"
+    },
+    {
+        "id": 5,
+        "image": "./HelpSlider/5.jpg"
+    },
+    {
+        "id": 6,
+        "image": "./HelpSlider/6.jpg"
+    },
+    {
+        "id": 7,
+        "image": "./HelpSlider/7.jpg"
+    }
+]
