@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+.CatalogPage {
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 0px;
+  background-color: #131313;
+  display: flex;
+  justify-content: "";
+  align-items: center;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=CatalogPage.css.map */
