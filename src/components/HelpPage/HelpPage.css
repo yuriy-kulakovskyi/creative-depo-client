@@ -7,7 +7,7 @@
   align-items: center;
 }
 .HelpPage .HelpPage__Container {
-  width: 80%;
+  width: 85%;
   height: 80vh;
   background-color: #131313;
   display: flex;
@@ -52,12 +52,59 @@
   font-family: "Manrope", sans-serif;
   font-weight: 500;
   position: relative;
-  left: 10px;
+  left: 0;
 }
 .HelpPage .HelpPage__Container .HelpPage__cont__block .cont__block__three {
-  width: 60%;
+  width: 87%;
   height: 300px;
-  background-color: azure;
+  background-color: #131313;
+  display: flex;
+  justify-content: space-around;
+}
+.HelpPage .HelpPage__Container .HelpPage__cont__block .cont__block__three .block__three__container {
+  width: 100%;
+  background-color: #131313;
+  height: 300px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  left: 5px;
+}
+.HelpPage .HelpPage__Container .HelpPage__cont__block .cont__block__three .block__three__container .three__cont__one {
+  height: 90px;
+  width: 115%;
+  background-color: #131313;
+  position: relative;
+  left: 12px;
+}
+.HelpPage .HelpPage__Container .HelpPage__cont__block .cont__block__three .block__three__container .three__cont__one .cont__one__text {
+  font-size: 24px;
+  color: white;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+}
+.HelpPage .HelpPage__Container .HelpPage__cont__block .cont__block__three .block__three__container .three__cont__two {
+  width: 118%;
+  height: 220px;
+  background-color: #131313;
+  line-height: 38px;
+}
+.HelpPage .HelpPage__Container .HelpPage__cont__block .cont__block__three .block__three__container .three__cont__two .cont__two__text {
+  font-size: 24px;
+  color: white;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  position: relative;
+  left: 10px;
+  top: 15px;
+}
+.HelpPage .HelpPage__Container .HelpPage__cont__block .cont__block__three .yelow__line {
+  height: 287px;
+  background-color: #ffee00;
+  width: 5px;
+  position: relative;
+  left: 5px;
 }
 
 /*# sourceMappingURL=HelpPage.css.map */
