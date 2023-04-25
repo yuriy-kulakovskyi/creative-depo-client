@@ -2,6 +2,7 @@
 @import "../variables.scss";
 $fontSizeHeaderEl:16px;
 $colorHeaderElementColor:#fb472e;
+$transition:0.5s;
 
 .header{
     @include flex(space-between,center,row);
@@ -17,7 +18,36 @@ $colorHeaderElementColor:#fb472e;
 //  margin-top: -10vh;
  
  
-   
+   .headerBurger{
+    width: 30px;
+    height: 25px;
+    @include flex(space-between,center,column);
+    display: none;
+    cursor: pointer;
+    transition: $transition;
+    .headerBurger__row__rotateRight{
+        width: 30px;
+        height: 3px;
+        background-color: $white;
+        transform: rotate(45deg);
+        position: absolute;
+        transition: $transition;
+    }
+    .headerBurger__row__rotateLeft{
+        width: 30px;
+        height: 3px;
+        background-color: $white;
+        transform: rotate(-45deg);
+        position: absolute;
+        transition: $transition;
+    }
+    .headerBurger__row{
+        width: 30px;
+        height: 3px;
+        background-color: $white;
+        transition: 1s;
+    }
+   }
     .header__logo{
         @include flex(space-between,center,row);
       
@@ -28,6 +58,9 @@ $colorHeaderElementColor:#fb472e;
         font-size: 44px;
         margin-right: 10px;
 
+       }
+       .header__logo__text{
+        width: 20px;
        }
     }
     .header__logo__text{
@@ -47,4 +80,21 @@ $colorHeaderElementColor:#fb472e;
         }
       }
     }
+}
+@media screen and (max-width:900px){
+    .header .header__right{
+        display: none;
+    }
+    .header .headerBurger{
+        display: flex;
+    }
+    .header .header__logo{
+        margin-bottom: 0px;
+    }
+    .header .header__logo .header__logo__letters {
+        display: none;
+    }
+    .header .header__logo .header__logo__text {
+        width: 150px;
+      }
 }
