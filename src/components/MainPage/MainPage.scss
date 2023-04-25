@@ -92,6 +92,14 @@
             -ms-border-radius: 50%;
             -o-border-radius: 50%;
         }
+        .MainPage-slideBtn {
+            height: 100%;
+            width: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            display: flex;
+        }
     }
 }
 

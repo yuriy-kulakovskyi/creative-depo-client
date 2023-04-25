@@ -107,6 +107,14 @@
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+.MainPage .MainPage-slider-container .MainPage-slideBtn {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  display: flex;
+}
 
 @media screen and (max-width: 900px) {
   .MainPage .MainPage-slider-container .MainPage-slider-btn-previous {

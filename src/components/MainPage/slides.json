@@ -1,0 +1,25 @@
+[{
+        "id": 1,
+        "image": "./MainPage/slide1.webp",
+        "imageForPhones": "./MainPage/slide1-phone.webp",
+        "action": ""
+    },
+    {
+        "id": 2,
+        "image": "./MainPage/slide2.webp",
+        "imageForPhones": "./MainPage/slide2-phone.webp",
+        "action": ".HelpPage"
+    },
+    {
+        "id": 3,
+        "image": "./MainPage/slide3.webp",
+        "imageForPhones": "./MainPage/slide3-phone.webp",
+        "action": ""
+    },
+    {
+        "id": 4,
+        "image": "./MainPage/slide4.webp",
+        "imageForPhones": "./MainPage/slide4-phone.webp",
+        "action": ""
+    }
+]
