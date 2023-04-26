@@ -1,0 +1,10 @@
+.headerWithBurger{
+   
+    min-height: 10vh;
+    width: 100%;
+
+    position: fixed;
+    transition: 1s;
+    z-index: 5;
+    
+}

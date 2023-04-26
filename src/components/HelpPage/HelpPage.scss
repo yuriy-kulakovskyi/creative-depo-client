@@ -9,6 +9,12 @@
     justify-content: center;
     align-items: center;
 
+    .helpImage {
+        width: auto;
+        height: auto;
+
+    }
+
     .HelpPage__Container {
         width: 85%;
         height: 80vh;
@@ -81,7 +87,7 @@
                 height: 300px;
                 background-color: $bgBlack;
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-between;
 
 
 
@@ -141,6 +147,8 @@
                     width: 5px;
                     position: relative;
                     left: 5px;
+                    display: flex;
+
 
                 }
             }
@@ -154,3 +162,126 @@
 
 
 }
+
+
+// @import "../mixins.scss";
+// @import "../variables.scss";
+
+// .HelpPage {
+//     width: 100%;
+//     height: 100vh;
+//     background-color: $bgBlack;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     .helpImage {
+//         width: auto;
+//         height: auto;
+//     }
+
+//     .HelpPage__Container {
+//         width: 85%;
+//         height: 80vh;
+//         background-color: $bgBlack;
+//         display: flex;
+//         justify-content: space-around;
+
+//         css Copy code .HelpPage__cont__block {
+//             height: 80vh;
+//             width: 46%;
+//             background-color: $bgBlack;
+//             display: flex;
+//             justify-content: space-around;
+//             flex-direction: column;
+
+//             .cont__block__one {
+//                 width: 90%;
+//                 height: 6.25rem;
+//                 background-color: $bgBlack;
+
+//                 .HelpPage__span {
+//                     color: white;
+//                     font-family: $fontFamily;
+//                     font-size: 2.3125rem;
+//                     /* 37px / 16px = 2.3125rem */
+//                     font-weight: 800;
+//                 }
+//             }
+
+//             .cont__block__two {
+//                 width: 64%;
+//                 height: 5.625rem;
+//                 background-color: $bgBlack;
+//                 display: flex;
+//                 justify-content: space-around;
+//                 align-items: center;
+
+//                 .blue__line {
+//                     background-color: $blue;
+//                     height: 3.6875rem;
+//                     width: 0.3125rem;
+//                     float: left;
+//                 }
+
+//                 .HelpPage__two__text {
+//                     font-size: 1.5rem;
+//                     /* 24px / 16px = 1.5rem */
+//                     color: white;
+//                     font-family: $fontFamily;
+//                     font-weight: 500;
+//                     position: relative;
+//                     left: 0;
+//                 }
+//             }
+
+//             .cont__block__three {
+//                 width: 87%;
+//                 height: 18.75rem;
+//                 background-color: $bgBlack;
+//                 display: flex;
+//                 justify-content: space-around;
+
+//                 .block__three__container {
+//                     width: 100%;
+//                     background-color: $bgBlack;
+//                     height: 18.75rem;
+//                     position: relative;
+//                     display: flex;
+//                     justify-content: space-between;
+//                     flex-direction: column;
+//                     left: 0.3125rem;
+
+//                     .three__cont__one {
+//                         height: 5.625rem;
+//                         width: 7.1875rem;
+//                         background-color: $bgBlack;
+//                         position: relative;
+//                         left: 0.75rem;
+
+//                         .cont__one__text {
+//                             font-size: 1.5rem;
+//                             color: white;
+//                             font-family: $fontFamily;
+//                             font-weight: 500;
+//                         }
+//                     }
+
+//                     .three__cont__two {
+//                         width: 7.5rem;
+//                         height: 13.75rem;
+//                         background-color: $bgBlack;
+//                         line-height: 2.375rem;
+
+//                         .cont__two__text {
+//                             font-size: 1.5rem;
+//                             color: white;
+//                             font-family: $fontFamily;
+//                             font-weight: 500;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

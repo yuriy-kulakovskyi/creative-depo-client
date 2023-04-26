@@ -1,33 +1,33 @@
 @import '../mixins.scss';
 @import '../variables.scss';
 
-.AllProducts{
+.ProductList{
     width:100%;
     height: auto;
     flex-wrap: wrap;
     @include flex(center, center, row);
-    .product__AllProducts{
+    .product__ProductList{
         width: 360px;
         height: 569px;
         margin: 50px 20px;
         @include flex('','', column);
-        .bottom__product__AllProducts{
+        .bottom__product__ProductList{
             width: 360px;
             height: auto;
             min-height: 250px;
             background-color: $white;
             padding: 30px;
             @include flex(space-between,'', column);
-            .txt__bottom__product__AllProducts{
+            .txt__bottom__product__ProductList{
                 user-select: none;
-            .caption__bottom__product__AllProducts{
+            .caption__bottom__product__ProductList{
                 font-family: $fontFamily;
                 font-style: normal;
                 line-height: 27px;
                 margin-bottom: 12px;
                 @include font(20px,700, $fontBlack);
             }
-            .sizes__bottom__product__AllProducts{
+            .sizes__bottom__product__ProductList{
                 font-family: $fontFamily;
                 font-style: normal;
                 line-height: 22px;
@@ -40,21 +40,21 @@
                     line-height: 22px;
                     @include font(14px,700, $fontBlack);
                 }
-                .list__sizes__bottom__product__AllProducts{
+                .list__sizes__bottom__product__ProductList{
                     @include flex("","", row);
                     p{
                         margin: 0 5px;
                     }
                 }
             }
-            .price__bottom__product__AllProducts{
+            .price__bottom__product__ProductList{
                 font-family: $fontFamily;
                 font-style: normal;
                 line-height: 22px;
                 @include font(16px,700, $fontBlack)
             }
         }
-            .btn__bottom__product__AllProducts{
+            .btn__bottom__product__ProductList{
                 width: 147px;
                 height: 35px;
                 font-style: normal;

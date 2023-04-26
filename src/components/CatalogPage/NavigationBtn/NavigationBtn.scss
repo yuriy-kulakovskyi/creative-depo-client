@@ -1,0 +1,40 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.btn__NavigationBtn{
+        width: 232px;
+        padding: 10px;
+        height: 49px;
+        font-family: $fontFamily;
+        font-style: normal;
+        transition-duration: 0.1s;
+        line-height: 20px;
+        text-transform: uppercase;
+        @include font(15px, 600, "");
+        @include flex(center,center,row);
+        cursor: pointer;
+        &:hover{
+            color: $red;
+            transition: 0.2s;
+        }
+        @media only screen and (max-width:1200px){
+                width: 200px;
+        }
+        @media only screen and (max-width:1100px){
+                width: 160px;
+        }
+        @media only screen and (max-width:822px){
+                width: 130px;
+        }
+        @media only screen and (max-width:685px){
+                width: 100px;
+        }
+        @media only screen and (max-width:550px){
+                width: 80px;
+                @include font(12px, 600, "");
+        }
+        @media only screen and (max-width:460px){
+                width: 70px;
+                @include font(10px, 600, "");
+        }
+}
