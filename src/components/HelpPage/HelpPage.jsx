@@ -48,7 +48,8 @@ function HelpPage() {
                 </div>
 
 
-                <img src={HelpImage} alt="" />
+                <img src={HelpImage} alt="" className='HelpIMage' />
+
 
             </div>
 
