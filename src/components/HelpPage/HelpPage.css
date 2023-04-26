@@ -6,6 +6,10 @@
   justify-content: center;
   align-items: center;
 }
+.HelpPage .helpImage {
+  width: auto;
+  height: auto;
+}
 .HelpPage .HelpPage__Container {
   width: 85%;
   height: 80vh;

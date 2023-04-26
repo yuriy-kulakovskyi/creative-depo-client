@@ -1,6 +1,94 @@
 .Footer {
   width: 100%;
   height: 70vh;
-  background-color: #000000; }
+  background-color: #000000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.Footer .Footer__socialContainer {
+  width: 700px;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Footer .Footer__socialContainer .Social {
+  width: 210px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #ff8562;
+}
+.Footer .Footer__socialContainer .SocialTelegram {
+  width: 210px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #0088CC;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Footer .Footer__socialContainer .SocialTelegram .telegram__img {
+  width: 50px;
+  height: 40px;
+  margin-left: 5px;
+}
+.Footer .Footer__socialContainer .SocialTelegram .telegram__img .telegramImage {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  top: 1px;
+}
+.Footer .Footer__socialContainer .SocialTelegram .telegram__text {
+  font-size: 17px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  left: -8px;
+}
+.Footer .Footer__socialContainer .SocialViber {
+  width: 210px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #8f5db7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Footer .Footer__socialContainer .SocialViber .viber__img {
+  width: 50px;
+  height: 40px;
+  margin-left: 5px;
+}
+.Footer .Footer__socialContainer .SocialViber .viber__img .viberImage {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  top: 4px;
+}
+.Footer .Footer__socialContainer .SocialViber .viber__text {
+  font-size: 17px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  left: -8px;
+}
+.Footer .Footer__text {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Manrope", sans-serif;
+}
+.Footer .Footer__email {
+  color: #ff8562;
+  font-size: 21px;
+  font-weight: 300;
+  font-family: "Manrope", sans-serif;
+}
 
 /*# sourceMappingURL=Footer.css.map */
