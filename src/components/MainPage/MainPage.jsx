@@ -27,7 +27,7 @@ function MainPage() {
     }, [])
 
     return (
-        <section className="MainPage">
+        <section id="MainPage" className="MainPage">
             <div className="MainPage-slider-container">
                 <swiper-container
                     effect="fade"
