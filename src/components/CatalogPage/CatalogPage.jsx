@@ -9,7 +9,7 @@ function CatalogPage(){
     const [selectedCategory, setSelectedCategory]=useState('All');
     const [loading, setLoading]=useState(true);
     const [error, setError]=useState(null);
-    const Categories=["All", "T-shirts", "hoodies", "caps", "accessories"];
+    const Categories=["Всі", "футболки", "худі", "кепки", "аксесуари"];
     useEffect(()=>{
         fetch(`https://creative-depo.onrender.com/products`)
         .then(response=>response.json())
