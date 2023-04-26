@@ -1,0 +1,32 @@
+// Mixins file
+
+// flex mixin
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+  }
+  
+  // grid mixin
+  @mixin grid ($columns, $rows, $gap) {
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    grid-gap: $gap;
+  }
+  
+  // font mixin
+  @mixin font ($size, $weight, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+  }
+  
+  // button mixin
+  @mixin button ($bgColor, $color, $borderRadius, $padding) {
+    background-color: $bgColor;
+    color: $color;
+    border-radius: $borderRadius;
+    padding: $padding;
+  }

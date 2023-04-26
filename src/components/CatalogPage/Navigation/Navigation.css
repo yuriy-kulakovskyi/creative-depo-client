@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+.Navigation {
+  width: 1160px;
+  height: 49px;
+  background-color: #fff;
+  display: flex;
+  justify-content: "";
+  align-items: "";
+  flex-direction: row;
+  margin-bottom: 25px;
+ 
+@media only screen and (max-width: 1200px) {
+    width: 1000px;
+}
+@media only screen and (max-width: 1100px) {
+    width: 800px;
+}
+@media only screen and (max-width: 822px) {
+    width: 650px;
+}
+@media only screen and (max-width: 685px) {
+    width: 500px;
+}
+@media only screen and (max-width: 550px) {
+    width: 400px;
+}
+@media only screen and (max-width: 460px) {
+    width: 350px;
+}
+}
+
+
+
