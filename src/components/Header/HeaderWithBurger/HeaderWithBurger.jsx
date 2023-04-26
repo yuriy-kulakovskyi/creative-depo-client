@@ -20,11 +20,11 @@ function HeaderWithBurger(){
         setClikedBurger(true)
     }
     return(
-        <div className='headerWithBurger' id='headerWithBurger'>
+        <header className='headerWithBurger' id='headerWithBurger'>
             <Header getHome={getHome} clickBurger={clickBurger} clickBurgerBtn={clickBurgerBtn} clikedBurger={clikedBurger}/>
             <HeaderBurger getHome={getHome} isVisibleBurger={isVisibleBurger}/>
             {isVisibleBurger}
-        </div>
+        </header>
     )
 }
 export default HeaderWithBurger

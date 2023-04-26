@@ -36,7 +36,7 @@ let howmuchIsScroll=0
    },1000)
 
     return(
-        <header  className='header' id='header' style={{backgroundColor:scrollColor}}>
+        <div  className='header' id='header' style={{backgroundColor:scrollColor}}>
             <div className="header__logo" onClick={()=>props.getHome(0)}  >
                 <div className="header__logo__letters">CD</div>
                 <div className="header__logo__text">Creative depo</div>
@@ -54,7 +54,7 @@ let howmuchIsScroll=0
                 <div className={props.clikedBurger ? "headerBurger__row":"headerBurger__row__rotateLeft"}></div>
         </div>
   
-        </header>
+        </div>
    
     )
 }
