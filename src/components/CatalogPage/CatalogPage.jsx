@@ -6,7 +6,7 @@ import './CatalogPage.css';
 function CatalogPage(){
     const [isPending, startTransition] = useTransition();
     const [receivedData, setReceivedData]=useState([]);
-    const [selectedCategory, setSelectedCategory]=useState('All');
+    const [selectedCategory, setSelectedCategory]=useState('Всі');
     const [loading, setLoading]=useState(true);
     const [error, setError]=useState(null);
     const Categories=["Всі", "футболки", "худі", "кепки", "аксесуари"];
