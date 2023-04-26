@@ -1,4 +1,4 @@
-.AllProducts {
+.ProductList {
   width: 100%;
   height: auto;
   flex-wrap: wrap;
@@ -7,7 +7,7 @@
   align-items: center;
   flex-direction: row;
 }
-.AllProducts .product__AllProducts {
+.ProductList .product__ProductList {
   width: 360px;
   height: 569px;
   margin: 50px 20px;
@@ -16,7 +16,7 @@
   align-items: "";
   flex-direction: column;
 }
-.AllProducts .product__AllProducts .bottom__product__AllProducts {
+.ProductList .product__ProductList .bottom__product__ProductList {
   width: 360px;
   height: auto;
   min-height: 250px;
@@ -27,10 +27,10 @@
   align-items: "";
   flex-direction: column;
 }
-.AllProducts .product__AllProducts .bottom__product__AllProducts .txt__bottom__product__AllProducts {
+.ProductList .product__ProductList .bottom__product__ProductList .txt__bottom__product__ProductList {
   user-select: none;
 }
-.AllProducts .product__AllProducts .bottom__product__AllProducts .txt__bottom__product__AllProducts .caption__bottom__product__AllProducts {
+.ProductList .product__ProductList .bottom__product__ProductList .txt__bottom__product__ProductList .caption__bottom__product__ProductList {
   font-family: "Manrope", sans-serif;
   font-style: normal;
   line-height: 27px;
@@ -39,7 +39,7 @@
   font-weight: 700;
   color: #000000;
 }
-.AllProducts .product__AllProducts .bottom__product__AllProducts .txt__bottom__product__AllProducts .sizes__bottom__product__AllProducts {
+.ProductList .product__ProductList .bottom__product__ProductList .txt__bottom__product__ProductList .sizes__bottom__product__ProductList {
   font-family: "Manrope", sans-serif;
   font-style: normal;
   line-height: 22px;
@@ -52,7 +52,7 @@
   align-items: "";
   flex-direction: row;
 }
-.AllProducts .product__AllProducts .bottom__product__AllProducts .txt__bottom__product__AllProducts .sizes__bottom__product__AllProducts span {
+.ProductList .product__ProductList .bottom__product__ProductList .txt__bottom__product__ProductList .sizes__bottom__product__ProductList span {
   font-family: "Manrope", sans-serif;
   font-style: normal;
   line-height: 22px;
@@ -60,16 +60,16 @@
   font-weight: 700;
   color: #000000;
 }
-.AllProducts .product__AllProducts .bottom__product__AllProducts .txt__bottom__product__AllProducts .sizes__bottom__product__AllProducts .list__sizes__bottom__product__AllProducts {
+.ProductList .product__ProductList .bottom__product__ProductList .txt__bottom__product__ProductList .sizes__bottom__product__ProductList .list__sizes__bottom__product__ProductList {
   display: flex;
   justify-content: "";
   align-items: "";
   flex-direction: row;
 }
-.AllProducts .product__AllProducts .bottom__product__AllProducts .txt__bottom__product__AllProducts .sizes__bottom__product__AllProducts .list__sizes__bottom__product__AllProducts p {
+.ProductList .product__ProductList .bottom__product__ProductList .txt__bottom__product__ProductList .sizes__bottom__product__ProductList .list__sizes__bottom__product__ProductList p {
   margin: 0 5px;
 }
-.AllProducts .product__AllProducts .bottom__product__AllProducts .txt__bottom__product__AllProducts .price__bottom__product__AllProducts {
+.ProductList .product__ProductList .bottom__product__ProductList .txt__bottom__product__ProductList .price__bottom__product__ProductList {
   font-family: "Manrope", sans-serif;
   font-style: normal;
   line-height: 22px;
@@ -77,7 +77,7 @@
   font-weight: 700;
   color: #000000;
 }
-.AllProducts .product__AllProducts .bottom__product__AllProducts .btn__bottom__product__AllProducts {
+.ProductList .product__ProductList .bottom__product__ProductList .btn__bottom__product__ProductList {
   width: 147px;
   height: 35px;
   font-style: normal;
@@ -98,10 +98,10 @@
   align-items: center;
   flex-direction: "";
 }
-.AllProducts .product__AllProducts .bottom__product__AllProducts .btn__bottom__product__AllProducts:hover {
+.ProductList .product__ProductList .bottom__product__ProductList .btn__bottom__product__ProductList:hover {
   cursor: pointer;
   transition-duration: 0.3s;
   border-radius: 10px;
 }
 
-/*# sourceMappingURL=AllProducts.css.map */
+/*# sourceMappingURL=ProductList.css.map */

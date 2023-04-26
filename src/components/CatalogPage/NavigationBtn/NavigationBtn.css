@@ -1,0 +1,60 @@
+.btn__NavigationBtn {
+  width: 232px;
+  padding: 10px;
+  height: 49px;
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  transition-duration: 0.1s;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  color: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+}
+.btn__NavigationBtn:hover {
+  color: #FB472E;
+  transition: 0.2s;
+}
+@media only screen and (max-width: 1200px) {
+  .btn__NavigationBtn {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .btn__NavigationBtn {
+    width: 160px;
+  }
+}
+@media only screen and (max-width: 822px) {
+  .btn__NavigationBtn {
+    width: 130px;
+  }
+}
+@media only screen and (max-width: 685px) {
+  .btn__NavigationBtn {
+    width: 100px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .btn__NavigationBtn {
+    width: 80px;
+    font-size: 12px;
+    font-weight: 600;
+    color: "";
+  }
+}
+@media only screen and (max-width: 460px) {
+  .btn__NavigationBtn {
+    width: 70px;
+    font-size: 10px;
+    font-weight: 600;
+    color: "";
+  }
+}
+
+/*# sourceMappingURL=NavigationBtn.css.map */
