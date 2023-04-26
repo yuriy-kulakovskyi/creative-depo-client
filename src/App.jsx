@@ -5,6 +5,7 @@ import HelpPage from "./components/HelpPage/HelpPage";
 import Footer from './components/Footer/Footer';
 // import Header from './components/Header/Header';
 import HeaderWithBurger from './components/Header/HeaderWithBurger/HeaderWithBurger';
+import HelpSlider from './components/HelpSlider/HelpSlider';
 
 function App() {
   return (
@@ -13,12 +14,18 @@ function App() {
       
       {/* Header component */}
       <HeaderWithBurger/>
+
       {/* MainPage component */}
       <MainPage />
+
       {/* CatalogPage component */}
       <CatalogPage/>
+
       {/* HelpPage component */}
       <HelpPage />
+
+      {/* HelpSlider component */}
+      <HelpSlider />
 
       {/* Footer component */}
       <Footer />
