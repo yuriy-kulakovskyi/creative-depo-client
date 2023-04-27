@@ -186,19 +186,21 @@
 .Footer .Footer__container .Footer__socialContainer .SocialTelegram,
 .Footer .Footer__container .Footer__socialContainer .SocialViber {
     height: 40px;
-    width: 230px;
+    width: 220px;
   }
   .Footer .Footer__container .Footer__socialContainer .SocialTelegram .telegram__img {
-    margin-left: 0;
+    margin-left: 8px;
   }
   .Footer .Footer__container .Footer__socialContainer .SocialTelegram .telegram__text {
-    left: 0;
+    position: relative;
+    left: -7px;
   }
   .Footer .Footer__container .Footer__socialContainer .SocialViber .viber__img {
-    margin-left: 0;
+    margin-left: 8px;
   }
   .Footer .Footer__container .Footer__socialContainer .SocialViber .viber__text {
-    left: 0;
+    position: relative;
+    left: -7px;
   }
   .Footer .Footer__container .Footer__links {
     width: 80%;
@@ -255,14 +257,32 @@
   }
 }
 @media only screen and (max-width: 400px) {
-  .Footer__container {
-    height: 140vh;
+  .Footer {
+    height: 130vh;
   }
-  .Footer__container .Footer__a {
-    font-size: 17px;
+  .Footer .Footer__container {
+    height: 130vh;
   }
-  .Footer__container .Footer__about {
+  .Footer .Footer__container .Footer__a {
+    font-size: 10px;
+  }
+  .Footer .Footer__container .Footer__about {
+    width: 90%;
     flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -24px;
+  }
+  .Footer .Footer__container .Footer__about .about__block__h1 {
+    text-align: center;
+  }
+  .Footer .Footer__container .Footer__about .about__block__a {
+    text-align: center;
+  }
+  .Footer .Footer__container .Footer__about .aboutImage {
+    position: relative;
+    left: 21px;
   }
 }
 
