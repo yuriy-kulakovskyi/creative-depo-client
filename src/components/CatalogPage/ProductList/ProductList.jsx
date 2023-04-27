@@ -1,5 +1,5 @@
 import React from "react";
-import './ProductList.scss';
+import './ProductList.css';
 import ProductBtn from "../ProductBtn/ProductBtn";
 const ProductList=({filteredProducts})=>{
     return(
