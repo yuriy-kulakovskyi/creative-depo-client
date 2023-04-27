@@ -42,10 +42,10 @@ let howmuchIsScroll=0
                 <div className="header__logo__text">Creative depo</div>
             </div>
             <div className="header__right">
-                <div className="header__right__el">КАТАЛОГ</div>
-                <div className="header__right__el">ЗСУ</div>
+                <div className="header__right__el" onClick={()=>props.getCatalogPage()}>КАТАЛОГ</div>
+                <div className="header__right__el" onClick={()=>props.getHelpPage()}>ЗСУ</div>
                 <a rel="noreferrer" target='_blank' href="https://creativedepo.com.ua/opt"><div className="header__right__el">ОПТ</div></a> 
-                <div className="header__right__el">КОНТАКТИ</div>
+                <div className="header__right__el" onClick={()=>props.getFooterPage()}>КОНТАКТИ</div>
             </div>
             <div className='headerBurger' onClick={()=>props.clickBurgerBtn(0)} style={{justifyContent:(props.clikedBurger) ? 'space-between' :'center'}}>
            
