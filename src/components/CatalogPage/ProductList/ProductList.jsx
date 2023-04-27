@@ -30,7 +30,7 @@ const ProductList=({filteredProducts})=>{
                             }
                             {documentsProduct && <p className="documents__bottom__product__ProductList"><span>Для:</span>{documentsProduct}</p>}
                             {printProduct && <p className="print__bottom__product__ProductList"><span>Друк:</span>{printProduct}</p>}
-                            <p className="price__bottom__product__ProductList">{product.price} грн.</p>
+                            <p className="price__bottom__product__ProductList">{product.price} {product.currency}.</p>
                             </div>
                             <ProductBtn/>
                           </div>
