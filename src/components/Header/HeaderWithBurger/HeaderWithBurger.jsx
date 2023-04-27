@@ -26,6 +26,7 @@ function HeaderWithBurger(){
         setIsVisibleBurger(false)
         setClikedBurger(true)
     }
+    //id: MainPage CatalogPage HelpPage HelpSlider Footer
     return(
         <header className='headerWithBurger' id='headerWithBurger'>
             <Header getHome={getHome}  clickBurgerBtn={clickBurgerBtn} clikedBurger={clikedBurger}/>
