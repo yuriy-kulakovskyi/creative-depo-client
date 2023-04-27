@@ -372,3 +372,19 @@ $telegramBlue: #0088CC;
     }
 
 }
+
+@media only screen and (max-width: 400px) {
+    .Footer__container {
+        height: 140vh;
+
+        .Footer__a {
+            font-size: 17px;
+        }
+
+        .Footer__about {
+            flex-direction: column;
+        }
+
+    }
+
+}

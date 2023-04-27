@@ -254,5 +254,16 @@
     margin-left: 5px;
   }
 }
+@media only screen and (max-width: 400px) {
+  .Footer__container {
+    height: 140vh;
+  }
+  .Footer__container .Footer__a {
+    font-size: 17px;
+  }
+  .Footer__container .Footer__about {
+    flex-direction: column;
+  }
+}
 
 /*# sourceMappingURL=Footer.css.map */
