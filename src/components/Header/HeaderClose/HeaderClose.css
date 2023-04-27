@@ -1,6 +1,8 @@
 .headerClose{
     width: 100%;
     height: 60vh;
-
+    position: absolute;
+    top: 50vh;
     display: none;
+    z-index: 3;
 }

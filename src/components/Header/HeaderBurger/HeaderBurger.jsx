@@ -5,7 +5,7 @@ function HeaderBurger(props){
 
     
     return(
-        <div className='headerBurgerPoup' id='headerBurgerPoup' style={{minHeight:(props.isVisibleBurger) ? '45vh':'0vh',opacity:(props.isVisibleBurger) ? '1':'0'}}>
+        <div className='headerBurgerPoup' id='headerBurgerPoup' style={{minHeight:(props.isVisibleBurger) ? '45vh':'0vh',opacity:(props.isVisibleBurger) ? '1':'0',top:(props.isVisibleBurger) ? '10vh':'-100vh'}}>
               <div className="headerBurgerPoup__logo" onClick={()=>props.getHome(0)}  >
              
                 <div className="headerBurgerPoup__logo__letters">CD</div>
