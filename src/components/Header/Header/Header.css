@@ -4,9 +4,9 @@
   align-items: center;
   flex-direction: row;
   color: #ffffff;
-  min-height: 10vh;
+  height: 10vh;
   width: 100%;
-  padding: 0px 30px;
+  padding: 30px 30px;
   transition: 1s;
 }
 .header .headerBurger {

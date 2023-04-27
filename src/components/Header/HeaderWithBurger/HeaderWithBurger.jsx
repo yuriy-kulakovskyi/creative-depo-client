@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Header from '../Header'
+import Header from '../Header/Header'
 import HeaderBurger from '../HeaderBurger/HeaderBurger'
 import './HeaderWithBurger.css'
 function HeaderWithBurger(){
@@ -8,12 +8,18 @@ function HeaderWithBurger(){
     function clickBurgerBtn(val){
         setClikedBurger(!clikedBurger)
         clickBurger()
-        console.log(clikedBurger)
+        
     }
     function clickBurger(){
         setIsVisibleBurger(!isVisibleBurger)
-        console.log(isVisibleBurger)
+
     }
+    setInterval(function(){
+        if(window.innerWidth>=900){
+            setIsVisibleBurger(false) 
+            setClikedBurger(true)
+        }
+    },1000)
     function getHome(val){    
         window.scrollTo(0,val)
         setIsVisibleBurger(false)

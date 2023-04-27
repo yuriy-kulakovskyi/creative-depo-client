@@ -1,6 +1,6 @@
 .headerWithBurger{
    
-    min-height: 10vh;
+    height: 100vh;
     width: 100%;
 
     position: fixed;

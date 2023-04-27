@@ -1,5 +1,5 @@
-@import '../mixins.scss';
-@import "../variables.scss";
+@import '../../mixins.scss';
+@import "../../variables.scss";
 $fontSizeHeaderEl:16px;
 $colorHeaderElementColor:#fb472e;
 $transition:0.5s;
@@ -8,9 +8,9 @@ $transition:0.5s;
     @include flex(space-between,center,row);
     // background-color: $bgBlack;
     color: $white;
-    min-height: 10vh;
+    height: 10vh;
     width: 100%;
-    padding: 0px 30px;
+    padding: 30px 30px;
  
     transition: 1s;
 
