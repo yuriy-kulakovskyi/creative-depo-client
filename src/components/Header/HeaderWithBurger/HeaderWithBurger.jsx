@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Header from '../Header/Header'
 import HeaderBurger from '../HeaderBurger/HeaderBurger'
 import './HeaderWithBurger.css'
+import HeaderClose from '../HeaderClose/HeaderClose'
 function HeaderWithBurger(){
     let [isVisibleBurger,setIsVisibleBurger]=useState(false)
     let [clikedBurger,setClikedBurger]=useState(true)
@@ -27,9 +28,9 @@ function HeaderWithBurger(){
     }
     return(
         <header className='headerWithBurger' id='headerWithBurger'>
-            <Header getHome={getHome} clickBurger={clickBurger} clickBurgerBtn={clickBurgerBtn} clikedBurger={clikedBurger}/>
+            <Header getHome={getHome}  clickBurgerBtn={clickBurgerBtn} clikedBurger={clikedBurger}/>
             <HeaderBurger getHome={getHome} isVisibleBurger={isVisibleBurger}/>
-            {isVisibleBurger}
+            <HeaderClose clickBurgerBtn={clickBurgerBtn} isVisibleBurger={isVisibleBurger}/>
         </header>
     )
 }
