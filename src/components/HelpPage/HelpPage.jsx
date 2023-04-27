@@ -6,7 +6,7 @@ import HelpImage from './HelpPageImages/HelpImage1.jpg'
 
 function HelpPage() {
     return (
-        <section className='HelpPage'>
+        <section className='HelpPage' id='HelpPage'>
 
             <div className="HelpPage__Container">
                 <div className="HelpPage__cont__block">

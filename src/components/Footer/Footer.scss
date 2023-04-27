@@ -10,128 +10,238 @@ $telegramBlue: #0088CC;
     width: 100%;
     height: 70vh;
     background-color: $fontBlack;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
 
-
-    .Footer__socialContainer {
-        width: 700px;
-        height: 70px;
-
+    .Footer__container {
+        width: 100%;
+        height: 60vh;
         display: flex;
         justify-content: space-around;
         align-items: center;
-
-        .Social {
-            width: 210px;
-            height: 40px;
-            border-radius: 10px;
-            background-color: $red;
+        flex-direction: column;
 
 
 
 
+        .Footer__socialContainer {
+            width: 700px;
+            height: 70px;
 
-
-
-
-        }
-
-        .SocialTelegram {
-            width: 210px;
-            height: 40px;
-            border-radius: 10px;
-            background-color: $telegramBlue;
             display: flex;
             justify-content: space-around;
             align-items: center;
 
-
-
-            .telegram__img {
-                width: 50px;
+            .Social {
+                width: 210px;
                 height: 40px;
-                margin-left: 5px;
+                border-radius: 10px;
+                background-color: $red;
 
-                .telegramImage {
-                    width: 36px;
-                    height: 36px;
-                    position: relative;
-                    top: 1px;
+
+
+
+
+
+
+
+            }
+
+            .SocialTelegram {
+                width: 210px;
+                height: 40px;
+                border-radius: 10px;
+                background-color: $telegramBlue;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+
+
+                .telegram__img {
+                    width: 50px;
+                    height: 40px;
+                    margin-left: 5px;
+
+                    .telegramImage {
+                        width: 36px;
+                        height: 36px;
+                        position: relative;
+                        top: 1px;
+                    }
+
                 }
 
+                .telegram__text {
+                    font-size: 17px;
+                    color: $white;
+                    font-weight: 700;
+                    font-family: $fontFamily;
+                    letter-spacing: 2px;
+                    position: relative;
+                    left: -8px;
+
+
+                }
             }
 
-            .telegram__text {
-                font-size: 17px;
-                color: $white;
-                font-weight: 700;
-                font-family: $fontFamily;
-                letter-spacing: 2px;
-                position: relative;
-                left: -8px;
+            .SocialViber {
+                width: 210px;
+                height: 40px;
+                border-radius: 10px;
+                background-color: $purple;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
 
 
+                .viber__img {
+                    width: 50px;
+                    height: 40px;
+                    margin-left: 5px;
+
+                    .viberImage {
+                        width: 32px;
+                        height: 32px;
+                        position: relative;
+                        top: 4px;
+
+                    }
+
+                }
+
+                .viber__text {
+                    font-size: 17px;
+                    color: $white;
+                    font-weight: 700;
+                    font-family: $fontFamily;
+                    letter-spacing: 2px;
+                    position: relative;
+
+                    left: -8px;
+
+
+                }
             }
+
         }
 
-        .SocialViber {
-            width: 210px;
-            height: 40px;
-            border-radius: 10px;
-            background-color: $purple;
+
+
+        .Footer__text {
+            color: $white;
+            font-size: 18px;
+            font-weight: 300;
+            font-family: $fontFamily;
+        }
+
+        .Footer__email {
+            color: $red;
+            font-size: 21px;
+            font-weight: 300;
+            font-family: $fontFamily;
+
+        }
+
+        .Footer__links {
+            width: 600px;
+            height: 90px;
+            background-color: $fontBlack;
             display: flex;
+            align-items: center;
             justify-content: space-around;
+
+            .Footer__a {
+                color: $white;
+                font-family: $fontFamily;
+                font-size: 30px;
+                text-decoration: none;
+                font-weight: 700;
+
+
+            }
+
+        }
+
+        .Footer__about {
+            width: 700px;
+            height: 140px;
+            background-color: $fontBlack;
+            display: flex;
+            justify-content: space-between;
             align-items: center;
 
+            .Footer__about__block {
+                width: 200px;
+                height: 80px;
+                background-color: $fontBlack;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
 
-            .viber__img {
-                width: 50px;
-                height: 40px;
-                margin-left: 5px;
+                .about__ImageCont {
+                    width: 200px;
+                    height: 60px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
 
-                .viberImage {
-                    width: 32px;
-                    height: 32px;
-                    position: relative;
-                    top: 4px;
+                    .about__ImageConat__one {
+                        height: 40px;
+                        width: 130px;
+                        display: flex;
+                        position: relative;
+                        top: 7px;
+
+
+                        .aboutImage {
+                            width: 50px;
+                            height: 40px;
+
+                            .about__img {
+                                height: 28px;
+                                height: 28px;
+                            }
+
+                        }
+
+                    }
+
+
 
                 }
 
-            }
 
-            .viber__text {
-                font-size: 17px;
-                color: $white;
-                font-weight: 700;
-                font-family: $fontFamily;
-                letter-spacing: 2px;
-                position: relative;
 
-                left: -8px;
+
+
+
+                .about__block__h1 {
+                    color: $white;
+                    font-family: $fontFamily;
+                    font-size: 17px;
+                    font-weight: 700;
+
+
+                }
+
+                .about__block__cont {
+                    width: 200px;
+                    height: 45px;
+                    background-color: $fontBlack;
+
+                    .about__block__a {
+                        color: $white;
+                        font-family: $fontFamily;
+                        font-weight: 500;
+                        text-decoration: none;
+
+                    }
+
+                }
 
 
             }
         }
-
-    }
-
-
-
-    .Footer__text {
-        color: $white;
-        font-size: 18px;
-        font-weight: 300;
-        font-family: $fontFamily;
-    }
-
-    .Footer__email {
-        color: $red;
-        font-size: 21px;
-        font-weight: 300;
-        font-family: $fontFamily;
 
     }
 
