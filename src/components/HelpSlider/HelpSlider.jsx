@@ -9,7 +9,7 @@ register();
 
 function HelpSlider() {
     return (
-        <section className="HelpSlider">
+        <section className="HelpSlider" id='HelpSlider'>
             <div className="HelpSlider-container">
                 <swiper-container
                     effect="slide"
