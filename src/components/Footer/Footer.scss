@@ -270,27 +270,35 @@ $telegramBlue: #0088CC;
                 .SocialTelegram,
                 .SocialViber {
                     height: 40px;
-                    width: 230px;
+                    width: 220px;
                 }
+
 
                 .SocialTelegram {
                     .telegram__img {
-                        margin-left: 0;
+                        margin-left: 8px;
                     }
 
                     .telegram__text {
-                        left: 0;
+                        position: relative;
+                        left: -7px;
                     }
+
+
                 }
 
                 .SocialViber {
                     .viber__img {
-                        margin-left: 0;
+                        margin-left: 8px;
                     }
 
                     .viber__text {
-                        left: 0;
+                        position: relative;
+
+                        left: -7px;
                     }
+
+
                 }
             }
 
@@ -374,17 +382,43 @@ $telegramBlue: #0088CC;
 }
 
 @media only screen and (max-width: 400px) {
-    .Footer__container {
-        height: 140vh;
+    .Footer {
+        height: 130vh;
 
-        .Footer__a {
-            font-size: 17px;
-        }
 
-        .Footer__about {
-            flex-direction: column;
+        .Footer__container {
+            height: 130vh;
+
+            .Footer__a {
+                font-size: 10px
+            }
+
+            .Footer__about {
+                width: 90%;
+                flex-direction: column;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: -24px;
+
+                .about__block__h1 {
+                    text-align: center;
+                }
+
+                .about__block__a {
+                    text-align: center;
+                }
+
+                .aboutImage {
+                    position: relative;
+                    left: 21px;
+
+                }
+
+
+            }
+
         }
 
     }
-
 }
