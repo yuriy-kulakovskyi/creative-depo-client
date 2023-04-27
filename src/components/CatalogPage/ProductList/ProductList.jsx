@@ -14,19 +14,21 @@ const ProductList=({filteredProducts})=>{
                           <div className="bottom__product__ProductList">
                             <div className="txt__bottom__product__ProductList">
                             <p className="caption__bottom__product__ProductList">{product.name}</p>
-                            { sizesProduct && 
+                            { sizesProduct.length > 0 ?
                              <div className="sizes__bottom__product__ProductList">
-                             <span>Розмір: </span>
-                             <div className="list__sizes__bottom__product__ProductList">
-                                 {
-                                 sizesProduct && sizesProduct.map((i, id)=>{
-                                     return(
-                                         <p key={id}>{i}</p>
-                                     )
-                                 })
-                                 }
+                              <span>Розмір: </span>
+                              <div className="list__sizes__bottom__product__ProductList">
+                                  {
+                                  sizesProduct.length > 0 ? sizesProduct.map((i, id)=>{
+                                      return(
+                                          <p key={id}>{i}</p>
+                                      )
+                                  })
+                                  : null
+                                  }
+                              </div>
                              </div>
-                             </div>
+                             : null
                             }
                             {documentsProduct && <p className="documents__bottom__product__ProductList"><span>Для:</span>{documentsProduct}</p>}
                             {printProduct && <p className="print__bottom__product__ProductList"><span>Друк:</span>{printProduct}</p>}
