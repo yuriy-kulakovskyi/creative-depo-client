@@ -15,7 +15,6 @@ function CatalogPage(){
         .then(response=>response.json())
         .then(data=>{
             setReceivedData(data);
-            console.log(data);
             setLoading(false);
         })
         .catch((err)=>{
@@ -39,9 +38,9 @@ function CatalogPage(){
     const filteredProducts=filterProducts(receivedData, selectedCategory);
 
     return(
-        <section className="CatalogPage" id="CatalogPage" >
+        <section className="CatalogPage">
         <Navigation Categories={Categories} CategoryClick={CategoryClick} selectedCategory={selectedCategory}/>
-        {loading ? <div className="loader__CatalogPage"><img src="https://i.stack.imgur.com/kOnzy.gif" width="60px" height="60px"></img></div>:<ProductList filteredProducts={filteredProducts}/>}
+        {loading ? <div className="loader__CatalogPage"><img src="https://i.stack.imgur.com/kOnzy.gif" alt="loading content" width="60px" height="60px"></img></div>:<ProductList filteredProducts={filteredProducts}/>}
         </section>
     )
 }

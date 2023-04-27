@@ -3,7 +3,7 @@ import './NavigationBtn.css';
 const NavigationBtn=({isActive, children, onClick})=>{
     if(isActive){
         return(
-            <div className="btn__NavigationBtn" style={{backgroundColor:"red", color:"#fff", pointerEvents:"none", fontWeight:"700"}}>{children}</div>
+            <div className="btn__NavigationBtn" style={{backgroundColor:"red", color:"#fff", pointerEvents:"none"}}>{children}</div>
         )
     }
     return(

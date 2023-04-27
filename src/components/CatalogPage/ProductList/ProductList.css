@@ -9,7 +9,7 @@
 }
 .ProductList .product__ProductList {
   width: 360px;
-  height: 569px;
+  height: 580px;
   margin: 50px 20px;
   display: flex;
   justify-content: "";
@@ -19,9 +19,9 @@
 .ProductList .product__ProductList .bottom__product__ProductList {
   width: 360px;
   height: auto;
-  min-height: 250px;
+  min-height: 261px;
   background-color: #fff;
-  padding: 30px;
+  padding: 25px;
   display: flex;
   justify-content: space-between;
   align-items: "";
@@ -43,7 +43,7 @@
   font-family: "Manrope", sans-serif;
   font-style: normal;
   line-height: 22px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 14px;
   font-weight: 500;
   color: #000000;
@@ -69,39 +69,32 @@
 .ProductList .product__ProductList .bottom__product__ProductList .txt__bottom__product__ProductList .sizes__bottom__product__ProductList .list__sizes__bottom__product__ProductList p {
   margin: 0 5px;
 }
+.ProductList .product__ProductList .bottom__product__ProductList .txt__bottom__product__ProductList .documents__bottom__product__ProductList, .ProductList .product__ProductList .bottom__product__ProductList .txt__bottom__product__ProductList .print__bottom__product__ProductList {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  line-height: 22px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+  width: 200px;
+}
+.ProductList .product__ProductList .bottom__product__ProductList .txt__bottom__product__ProductList .documents__bottom__product__ProductList span, .ProductList .product__ProductList .bottom__product__ProductList .txt__bottom__product__ProductList .print__bottom__product__ProductList span {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  line-height: 22px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+}
 .ProductList .product__ProductList .bottom__product__ProductList .txt__bottom__product__ProductList .price__bottom__product__ProductList {
   font-family: "Manrope", sans-serif;
   font-style: normal;
   line-height: 22px;
+  margin-top: 5px;
   font-size: 16px;
   font-weight: 700;
   color: #000000;
 }
-.ProductList .product__ProductList .bottom__product__ProductList .btn__bottom__product__ProductList {
-  width: 147px;
-  height: 35px;
-  font-style: normal;
-  line-height: 18px;
-  font-family: "Manrope", sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  color: #fff;
-  background-color: #FB472E;
-  color: #fff;
-  border-radius: 0;
-  padding: 0;
-  text-transform: uppercase;
-  border: none;
-  transition-duration: 0.3s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: "";
-}
-.ProductList .product__ProductList .bottom__product__ProductList .btn__bottom__product__ProductList:hover {
-  cursor: pointer;
-  transition-duration: 0.3s;
-  border-radius: 10px;
-}
+
 
 /*# sourceMappingURL=ProductList.css.map */
