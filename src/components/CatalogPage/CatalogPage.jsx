@@ -39,7 +39,7 @@ function CatalogPage(){
     const filteredProducts=filterProducts(receivedData, selectedCategory);
 
     return(
-        <section className="CatalogPage">
+        <section className="CatalogPage" id="CatalogPage" >
         <Navigation Categories={Categories} CategoryClick={CategoryClick} selectedCategory={selectedCategory}/>
         {loading ? <div className="loader__CatalogPage"><img src="https://i.stack.imgur.com/kOnzy.gif" width="60px" height="60px"></img></div>:<ProductList filteredProducts={filteredProducts}/>}
         </section>

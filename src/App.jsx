@@ -3,7 +3,9 @@ import MainPage from "./components/MainPage/MainPage";
 import CatalogPage from "./components/CatalogPage/CatalogPage";
 import HelpPage from "./components/HelpPage/HelpPage";
 import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
+// import Header from './components/Header/Header';
+import HeaderWithBurger from './components/Header/HeaderWithBurger/HeaderWithBurger';
+import HelpSlider from './components/HelpSlider/HelpSlider';
 
 function App() {
   return (
@@ -11,13 +13,19 @@ function App() {
       {/* The place to hold components */}
       
       {/* Header component */}
-      <Header/>
+      <HeaderWithBurger/>
+
       {/* MainPage component */}
       <MainPage />
+
       {/* CatalogPage component */}
       <CatalogPage/>
+
       {/* HelpPage component */}
       <HelpPage />
+
+      {/* HelpSlider component */}
+      <HelpSlider />
 
       {/* Footer component */}
       <Footer />

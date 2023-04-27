@@ -4,12 +4,10 @@
   align-items: center;
   flex-direction: row;
   color: #ffffff;
-  height: 10vh;
+  min-height: 10vh;
   width: 100%;
   padding: 0px 30px;
-  position: fixed;
   transition: 1s;
-  z-index: 5;
 }
 .header .headerBurger {
   width: 30px;
@@ -52,6 +50,7 @@
   font-weight: 600;
   user-select: none;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 .header .header__logo .header__logo__letters {
   font-size: 44px;
@@ -69,7 +68,11 @@
   align-items: center;
   flex-direction: row;
 }
+.header .header__right a {
+  text-decoration: none;
+}
 .header .header__right .header__right__el {
+  color: #ffffff;
   user-select: none;
   margin: 0 15px;
   font-weight: 600;
