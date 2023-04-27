@@ -1,0 +1,20 @@
+@import '../mixins.scss';
+@import '../variables.scss';
+.btn__bottom__product__ProductList{
+    width: 147px;
+    height: 35px;
+    font-style: normal;
+    line-height: 18px;
+    font-family: $fontFamily;
+    @include font(13px,700, $white);
+    @include button($red,$white,0,0);
+    text-transform: uppercase;
+    border: none;
+    transition-duration: 0.3s;
+    @include flex(center, center, '');
+    &:hover{
+        cursor: pointer;
+        transition-duration: 0.3s;
+        border-radius: 10px;
+    }
+}

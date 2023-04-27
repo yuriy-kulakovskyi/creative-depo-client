@@ -1,0 +1,28 @@
+.btn__bottom__product__ProductList {
+  width: 147px;
+  height: 35px;
+  font-style: normal;
+  line-height: 18px;
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #FB472E;
+  color: #fff;
+  border-radius: 0;
+  padding: 0;
+  text-transform: uppercase;
+  border: none;
+  transition-duration: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: "";
+}
+.btn__bottom__product__ProductList:hover {
+  cursor: pointer;
+  transition-duration: 0.3s;
+  border-radius: 10px;
+}
+
+
