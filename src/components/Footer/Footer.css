@@ -3,6 +3,9 @@
   height: 70vh;
   background-color: #000000;
 }
+.Footer a {
+  text-decoration: none;
+}
 .Footer .Footer__container {
   width: 100%;
   height: 60vh;
@@ -164,6 +167,92 @@
   font-family: "Manrope", sans-serif;
   font-weight: 500;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .Footer {
+    height: 90vh;
+  }
+  .Footer .Footer__container {
+    height: 90vh;
+  }
+  .Footer .Footer__container .Footer__socialContainer {
+    width: 100%;
+    height: 30vh;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Footer .Footer__container .Footer__socialContainer .Social,
+.Footer .Footer__container .Footer__socialContainer .SocialTelegram,
+.Footer .Footer__container .Footer__socialContainer .SocialViber {
+    height: 40px;
+    width: 230px;
+  }
+  .Footer .Footer__container .Footer__socialContainer .SocialTelegram .telegram__img {
+    margin-left: 0;
+  }
+  .Footer .Footer__container .Footer__socialContainer .SocialTelegram .telegram__text {
+    left: 0;
+  }
+  .Footer .Footer__container .Footer__socialContainer .SocialViber .viber__img {
+    margin-left: 0;
+  }
+  .Footer .Footer__container .Footer__socialContainer .SocialViber .viber__text {
+    left: 0;
+  }
+  .Footer .Footer__container .Footer__links {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .Footer .Footer__container .Footer__links .Footer__a {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .Footer .Footer__container .Footer__about {
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .Footer .Footer__container .Footer__about .Footer__about__block {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  .Footer .Footer__container .Footer__about .Footer__about__block .about__ImageCont {
+    width: 100%;
+  }
+  .Footer .Footer__container .Footer__about .Footer__about__block .about__ImageCont .about__ImageConat__one .aboutImage {
+    width: 50px;
+    height: 50px;
+  }
+  .Footer .Footer__container .Footer__about .Footer__about__block .about__ImageCont .about__ImageConat__one .aboutImage .about__img {
+    height: 30px;
+    width: 30px;
+  }
+  .Footer .Footer__container .Footer__about .Footer__about__block .about__block__h1 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .Footer .Footer__container .Footer__about .Footer__about__block .about__block__cont {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Footer .Footer__container .Footer__about .Footer__about__block .about__block__cont .about__block__a {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .Footer__about__block {
+    margin-left: 5px;
+  }
 }
 
 /*# sourceMappingURL=Footer.css.map */

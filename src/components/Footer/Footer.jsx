@@ -19,28 +19,34 @@ function Footer() {
                 <span className='Footer__email'>creativedepo.ua@gmail.com</span>
 
                 <div className="Footer__socialContainer">
+                    <a href="https://www.instagram.com/creative.depo/"   >
 
-                    <img src={insta} alt="" className='Social' />
-
-                    <div className="SocialTelegram">
-                        <div className="telegram__img">
-                            <img src={telegram} alt="" className='telegramImage' />
-
-
-
-                        </div>
-                        <p className='telegram__text'>CREATIVE.DEPO</p>
-
-                    </div>
-                    <div className="SocialViber">
-                        <div className="viber__img">
-                            <img src={viber} alt="" className='viberImage' />
+                        <img src={insta} alt="" className='Social' />
+                    </a>
+                    <a href="https://t.me/creative_depo"  >
+                        <div className="SocialTelegram">
+                            <div className="telegram__img">
+                                <img src={telegram} alt="" className='telegramImage' />
 
 
+
+                            </div>
+                            <p className='telegram__text'>CREATIVE.DEPO</p>
 
                         </div>
-                        <p className='viber__text'>CREATIVE.DEPO</p>
-                    </div>
+                    </a>
+                    <a href="viber://pa?chatURI=creativedepo" >
+                        <div className="SocialViber">
+                            <div className="viber__img">
+                                <img src={viber} alt="" className='viberImage' />
+
+
+
+                            </div>
+
+                            <p className='viber__text'>CREATIVE.DEPO</p>
+                        </div>
+                    </a>
                 </div>
 
                 <div className="Footer__links">
@@ -54,17 +60,17 @@ function Footer() {
                     <div className="Footer__about__block">
                         <p className='about__block__h1'>ПРО CREATIVE.DEPO</p>
                         <div className="about__block__cont">
-                            <a href="" className='about__block__a'>про нас</a>
+                            <a href="https://creativedepo.com.ua/faq#!/tab/567709660-1" className='about__block__a'>про нас</a>
                             <br />
-                            <a href="" className='about__block__a'>умови використання</a>
+                            <a href="https://creativedepo.com.ua/faq#!/tab/567709660-4" className='about__block__a'>умови використання</a>
                         </div>
                     </div>
                     <div className="Footer__about__block">
                         <p className='about__block__h1'>ПОКУПЦЯМ</p>
                         <div className="about__block__cont">
-                            <a href="" className='about__block__a'>доставка та оплата</a>
+                            <a href="https://creativedepo.com.ua/faq#!/tab/567709660-2" className='about__block__a'>доставка та оплата</a>
                             <br />
-                            <a href="" className='about__block__a'>повернення та обмін</a>
+                            <a href="https://creativedepo.com.ua/faq#!/tab/567709660-3" className='about__block__a'>повернення та обмін</a>
                         </div>
 
                     </div>
