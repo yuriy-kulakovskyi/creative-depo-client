@@ -174,33 +174,7 @@
 
 }
 
-@media screen and (max-width: 1300px) {
-    .HelpPage {
 
-
-
-        .yelowline {
-            height: 300px;
-        }
-
-
-        .cont__block__three {
-            width: 300px;
-
-            .block__three__container {
-                width: 300px;
-
-
-
-                .three__cont__one {
-                    width: 200px;
-                    background-color: aquamarine;
-                }
-            }
-        }
-    }
-
-}
 
 @media screen and (max-width: 800px) {
     .HelpPage {
@@ -440,6 +414,107 @@
             }
 
 
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    @import "../mixins.scss";
+    @import "../variables.scss";
+
+    .HelpPage {
+        flex-direction: column;
+        justify-content: space-around;
+
+        .HelpPage__img__container {
+            width: 90%;
+            height: 30vh;
+
+
+
+            .HelpIMage {
+                height: 100%;
+                position: relative;
+                top: 240px;
+
+
+            }
+        }
+
+        .HelpPage__Container {
+            width: 100%;
+            height: auto;
+            padding: 0 15px;
+            margin-top: 40px;
+
+            .HelpPage__cont__block {
+                height: auto;
+                width: 100%;
+                margin-bottom: 40px;
+
+                .cont__block__one {
+                    width: 100%;
+                    height: 80px;
+                    margin-bottom: 20px;
+
+                    .HelpPage__span {
+                        font-size: 24px;
+                    }
+                }
+
+                .cont__block__two {
+                    width: 100%;
+                    height: 70px;
+
+                    .blueline {
+                        height: 50px;
+                    }
+
+                    .two__text {
+                        font-size: 18px;
+                        left: -70px;
+                    }
+                }
+
+                .cont__block__three {
+                    width: 100%;
+                    height: auto;
+
+                    .block__three__container {
+                        width: 100%;
+                        height: auto;
+                        flex-direction: column;
+
+                        .three__cont__one {
+                            height: auto;
+                            width: 100%;
+                            margin-bottom: 10px;
+
+                            .cont__one__text {
+                                font-size: 18px;
+                            }
+                        }
+
+                        .three__cont__two {
+                            width: 100%;
+                            height: auto;
+                            margin-top: 10px;
+
+                            .cont__two__text {
+                                font-size: 18px;
+                                left: 5;
+                                top: 0;
+                            }
+                        }
+                    }
+
+                    .yelowline {
+                        height: auto;
+                        width: 5px;
+                    }
+                }
+            }
         }
     }
 }

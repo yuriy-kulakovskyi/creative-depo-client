@@ -115,21 +115,6 @@
   display: flex;
 }
 
-@media screen and (max-width: 1300px) {
-  .HelpPage .yelowline {
-    height: 300px;
-  }
-  .HelpPage .cont__block__three {
-    width: 300px;
-  }
-  .HelpPage .cont__block__three .block__three__container {
-    width: 300px;
-  }
-  .HelpPage .cont__block__three .block__three__container .three__cont__one {
-    width: 200px;
-    background-color: aquamarine;
-  }
-}
 @media screen and (max-width: 800px) {
   .HelpPage {
     height: 190vh;
@@ -247,6 +232,82 @@
   }
   .HelpPage .HelpPage__Container .HelpPage__cont__block .cont__block__three .yelowline {
     height: 440px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .HelpPage {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .HelpPage .HelpPage__img__container {
+    width: 90%;
+    height: 30vh;
+  }
+  .HelpPage .HelpPage__img__container .HelpIMage {
+    height: 100%;
+    position: relative;
+    top: 240px;
+  }
+  .HelpPage .HelpPage__Container {
+    width: 100%;
+    height: auto;
+    padding: 0 15px;
+    margin-top: 40px;
+  }
+  .HelpPage .HelpPage__Container .HelpPage__cont__block {
+    height: auto;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .HelpPage .HelpPage__Container .HelpPage__cont__block .cont__block__one {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  .HelpPage .HelpPage__Container .HelpPage__cont__block .cont__block__one .HelpPage__span {
+    font-size: 24px;
+  }
+  .HelpPage .HelpPage__Container .HelpPage__cont__block .cont__block__two {
+    width: 100%;
+    height: 70px;
+  }
+  .HelpPage .HelpPage__Container .HelpPage__cont__block .cont__block__two .blueline {
+    height: 50px;
+  }
+  .HelpPage .HelpPage__Container .HelpPage__cont__block .cont__block__two .two__text {
+    font-size: 18px;
+    left: -70px;
+  }
+  .HelpPage .HelpPage__Container .HelpPage__cont__block .cont__block__three {
+    width: 100%;
+    height: auto;
+  }
+  .HelpPage .HelpPage__Container .HelpPage__cont__block .cont__block__three .block__three__container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  .HelpPage .HelpPage__Container .HelpPage__cont__block .cont__block__three .block__three__container .three__cont__one {
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .HelpPage .HelpPage__Container .HelpPage__cont__block .cont__block__three .block__three__container .three__cont__one .cont__one__text {
+    font-size: 18px;
+  }
+  .HelpPage .HelpPage__Container .HelpPage__cont__block .cont__block__three .block__three__container .three__cont__two {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  .HelpPage .HelpPage__Container .HelpPage__cont__block .cont__block__three .block__three__container .three__cont__two .cont__two__text {
+    font-size: 18px;
+    left: 5;
+    top: 0;
+  }
+  .HelpPage .HelpPage__Container .HelpPage__cont__block .cont__block__three .yelowline {
+    height: auto;
+    width: 5px;
   }
 }
 
