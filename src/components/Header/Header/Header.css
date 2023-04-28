@@ -6,8 +6,11 @@
   color: #ffffff;
   height: 10vh;
   width: 100%;
-  padding: 30px 30px;
+  padding: 0px 30px;
   transition: 1s;
+  z-index: 5;
+  position: absolute;
+  top: 0;
 }
 .header .headerBurger {
   width: 30px;
