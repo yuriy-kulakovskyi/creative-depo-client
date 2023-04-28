@@ -9,9 +9,17 @@
     justify-content: center;
     align-items: center;
 
-    .helpImage {
-        width: auto;
-        height: auto;
+    .HelpPage__img__container {
+        width: 45%;
+        height: 40vh;
+        background-size: cover;
+        z-index: 3;
+
+        .HelpIMage {
+            width: 100%;
+            height: 80vh;
+            z-index: 2;
+        }
 
     }
 
@@ -20,15 +28,16 @@
         height: 80vh;
         background-color: $bgBlack;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
 
         .HelpPage__cont__block {
-            height: 80vh;
+            height: 93vh;
             width: 46%;
             background-color: $bgBlack;
             display: flex;
             justify-content: space-around;
             flex-direction: column;
+            float: left;
 
 
             .cont__block__one {
@@ -40,7 +49,7 @@
                 .HelpPage__span {
                     color: white;
                     font-family: $fontFamily;
-                    font-size: 37px;
+                    font-size: 30px;
                     font-weight: 800;
 
 
@@ -50,46 +59,36 @@
             }
 
             .cont__block__two {
-                width: 64%;
-                height: 90px;
+                width: 430px;
+                height: 80px;
 
-                background-color: $bgBlack;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-
-
-                .blue__line {
-                    background-color: $blue;
-                    height: 59px;
-                    width: 5px;
-                    float: left;
-
-
-                }
-
-                .HelpPage__two__text {
-                    font-size: 24px;
-                    color: white;
-                    font-family: $fontFamily;
-                    font-weight: 500;
-                    position: relative;
-                    left: 0;
-                }
-
-
-
-
-            }
-
-            .cont__block__three {
-                width: 87%;
-                height: 300px;
                 background-color: $bgBlack;
                 display: flex;
                 justify-content: space-between;
 
+                .blueline {
+                    width: 5px;
+                    height: 70px;
+                    background-color: $blue;
+                }
 
+                .two__text {
+                    font-size: 25px;
+                    color: $white;
+                    font-family: $fontFamily;
+                    font-weight: 400;
+                    position: relative;
+                    left: -50px;
+
+                }
+            }
+
+            .cont__block__three {
+                width: 590px;
+                height: 400px;
+
+                display: flex;
+                justify-content: space-between;
 
                 .block__three__container {
                     width: 100%;
@@ -99,18 +98,18 @@
                     display: flex;
                     justify-content: space-between;
                     flex-direction: column;
-                    left: 5px;
+
 
                     .three__cont__one {
                         height: 90px;
-                        width: 115%;
+                        width: 95%;
 
                         background-color: $bgBlack;
                         position: relative;
                         left: 12px;
 
                         .cont__one__text {
-                            font-size: 24px;
+                            font-size: 21px;
                             color: white;
                             font-family: $fontFamily;
                             font-weight: 500;
@@ -119,14 +118,14 @@
                     }
 
                     .three__cont__two {
-                        width: 118%;
+                        width: 90%;
                         height: 220px;
                         background-color: $bgBlack;
                         line-height: 38px;
 
 
                         .cont__two__text {
-                            font-size: 24px;
+                            font-size: 21px;
                             color: white;
                             font-family: $fontFamily;
                             font-weight: 500;
@@ -141,147 +140,306 @@
 
                 }
 
-                .yelow__line {
+                .yelowline {
                     height: 287px;
                     background-color: $yellow;
                     width: 5px;
                     position: relative;
-                    left: 5px;
+
                     display: flex;
 
 
                 }
+
             }
+
 
         }
 
-
-
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 1300px) {
+    .HelpPage {
+
+
+
+        .yelowline {
+            height: 300px;
+        }
+
+
+        .cont__block__three {
+            width: 300px;
+
+            .block__three__container {
+                width: 300px;
+
+
+
+                .three__cont__one {
+                    width: 200px;
+                    background-color: aquamarine;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .HelpPage {
+        height: 190vh;
+
+
+
+
+        .HelpPage__Container {
+            flex-direction: column;
+            height: 180vh;
+
+            .HelpPage__img__container {
+                width: 100%;
+                position: relative;
+                top: -340px;
+
+            }
+
+
+
+            .HelpPage__cont__block {
+                width: 100%;
+
+                .cont__block__one {
+                    width: 90%;
+
+                    height: 40px;
+
+
+                    .HelpPage__span {
+                        font-size: 27px;
+
+                    }
+                }
+
+
+
+            }
+
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    .HelpPage {
+        height: 190vh;
+
+
+        .HelpPage__Container {
+            flex-direction: column;
+            height: 160vh;
+
+            .HelpPage__img__container {
+                width: 100%;
+                position: relative;
+                top: -200px;
+
+            }
+
+
+
+            .HelpPage__cont__block {
+                width: 100%;
+
+                .cont__block__one {
+                    width: 90%;
+
+                    height: 40px;
+
+
+                    .HelpPage__span {
+                        font-size: 27px;
+
+                    }
+                }
+
+
+
+            }
+
+
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .HelpPage {
+        height: 180vh;
+
+
+
+        .HelpPage__Container {
+            flex-direction: column;
+            height: 180vh;
+
+            .HelpIMage {
+                height: 400px;
+
+            }
+
+
+            .HelpPage__cont__block {
+                width: 100%;
+
+
+                .cont__block__three {
+                    width: 100%;
+
+                    .yelowline {
+                        height: 380px;
+
+                    }
+
+                    .three__cont__one,
+                    .three__cont__two {
+                        width: 110%;
+
+                        .cont__one__text,
+                        .cont__two__text {
+                            font-size: 5px;
+                        }
+
+
+                    }
+                }
+
+                .cont__block__one {
+                    width: 90%;
+
+                    height: 40px;
+
+
+                    .HelpPage__span {
+                        font-size: 27px;
+
+                    }
+                }
+
+
+
+            }
+
+
+        }
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+
+    .HelpPage {
+
+
+
+
+
+        .HelpPage__Container {
+            flex-direction: column;
+            height: 180vh;
+
+
+            .HelpPage__cont__block {
+                width: 100%;
+
+
+                .cont__block__three {
+                    width: 100%;
+
+                    .yelowline {
+                        height: 440px;
+
+                    }
+
+
+                }
+
+
+
+
+
+            }
+
+
+        }
+    }
+
 
 
 
 }
 
 
-// @import "../mixins.scss";
-// @import "../variables.scss";
+@media screen and(max-width: 500px) {
 
-// .HelpPage {
-//     width: 100%;
-//     height: 100vh;
-//     background-color: $bgBlack;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
+    .HelpPage {
+        height: 180vh;
 
-//     .helpImage {
-//         width: auto;
-//         height: auto;
-//     }
 
-//     .HelpPage__Container {
-//         width: 85%;
-//         height: 80vh;
-//         background-color: $bgBlack;
-//         display: flex;
-//         justify-content: space-around;
 
-//         css Copy code .HelpPage__cont__block {
-//             height: 80vh;
-//             width: 46%;
-//             background-color: $bgBlack;
-//             display: flex;
-//             justify-content: space-around;
-//             flex-direction: column;
+        .HelpPage__Container {
+            flex-direction: column;
+            height: 180vh;
 
-//             .cont__block__one {
-//                 width: 90%;
-//                 height: 6.25rem;
-//                 background-color: $bgBlack;
 
-//                 .HelpPage__span {
-//                     color: white;
-//                     font-family: $fontFamily;
-//                     font-size: 2.3125rem;
-//                     /* 37px / 16px = 2.3125rem */
-//                     font-weight: 800;
-//                 }
-//             }
+            .HelpPage__cont__block {
+                width: 100%;
 
-//             .cont__block__two {
-//                 width: 64%;
-//                 height: 5.625rem;
-//                 background-color: $bgBlack;
-//                 display: flex;
-//                 justify-content: space-around;
-//                 align-items: center;
 
-//                 .blue__line {
-//                     background-color: $blue;
-//                     height: 3.6875rem;
-//                     width: 0.3125rem;
-//                     float: left;
-//                 }
+                .cont__block__three {
+                    width: 100%;
 
-//                 .HelpPage__two__text {
-//                     font-size: 1.5rem;
-//                     /* 24px / 16px = 1.5rem */
-//                     color: white;
-//                     font-family: $fontFamily;
-//                     font-weight: 500;
-//                     position: relative;
-//                     left: 0;
-//                 }
-//             }
+                    .yelowline {
+                        height: 440px;
 
-//             .cont__block__three {
-//                 width: 87%;
-//                 height: 18.75rem;
-//                 background-color: $bgBlack;
-//                 display: flex;
-//                 justify-content: space-around;
+                    }
 
-//                 .block__three__container {
-//                     width: 100%;
-//                     background-color: $bgBlack;
-//                     height: 18.75rem;
-//                     position: relative;
-//                     display: flex;
-//                     justify-content: space-between;
-//                     flex-direction: column;
-//                     left: 0.3125rem;
 
-//                     .three__cont__one {
-//                         height: 5.625rem;
-//                         width: 7.1875rem;
-//                         background-color: $bgBlack;
-//                         position: relative;
-//                         left: 0.75rem;
+                }
 
-//                         .cont__one__text {
-//                             font-size: 1.5rem;
-//                             color: white;
-//                             font-family: $fontFamily;
-//                             font-weight: 500;
-//                         }
-//                     }
 
-//                     .three__cont__two {
-//                         width: 7.5rem;
-//                         height: 13.75rem;
-//                         background-color: $bgBlack;
-//                         line-height: 2.375rem;
 
-//                         .cont__two__text {
-//                             font-size: 1.5rem;
-//                             color: white;
-//                             font-family: $fontFamily;
-//                             font-weight: 500;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
+
+
+            }
+
+
+        }
+    }
+}

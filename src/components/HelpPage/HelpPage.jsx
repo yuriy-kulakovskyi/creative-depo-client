@@ -16,15 +16,16 @@ function HelpPage() {
                         <span className='HelpPage__span'>Україні, купуючи мерч:</span>
 
                     </div>
-                    <div className="cont__block__two">
-                        <div className="blue__line"></div>
-                        <p className='HelpPage__two__text'>Частину прибутку витрачаємо <br />
-                            на потреби ЗСУ</p>
 
+                    <div className="cont__block__two">
+                        <div className="blueline"></div>
+                        <p className='two__text'>Частину прибутку витрачаємо <br />
+
+                            на потреби ЗСУ</p>
 
                     </div>
                     <div className="cont__block__three">
-                        <div className="yelow__line"></div>
+                        <div className="yelowline"></div>
                         <div className="block__three__container">
                             <div className="three__cont__one">
                                 <p className='cont__one__text'> Нижче є фото бронежилетів, які були виготовлені <br />
@@ -41,17 +42,24 @@ function HelpPage() {
 
                         </div>
 
-
-
                     </div>
+
+
+
 
                 </div>
 
 
-                <img src={HelpImage} alt="" className='HelpIMage' />
 
+
+                <div className="HelpPage__img__container">
+
+
+                    <img src={HelpImage} alt="" className='HelpIMage' />
+                </div>
 
             </div>
+
 
 
 
