@@ -420,8 +420,7 @@
 
 @media only screen and (max-width: 400px) {
 
-    @import "../mixins.scss";
-    @import "../variables.scss";
+
 
     .HelpPage {
         flex-direction: column;
@@ -429,7 +428,7 @@
 
         .HelpPage__img__container {
             width: 90%;
-            height: 30vh;
+            height: 50vh;
 
 
 
