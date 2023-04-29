@@ -9,61 +9,6 @@ import { useEffect } from "react";
 
 function Popup (){
 
-
-    const [count, setCount] = useState(1)
-
-    let arr = []
-
-    useEffect(() => {
-
-        fetch('https://creative-depo.onrender.com/products')
-            .then((response) => {
-                return response.json();
-            })
-            .then((data) => {
-                arr = data
-                console.log(arr)
-            });
-
-        $('.block').click(function(e){
-            setCount(1)
-            let idCard  = e.target.id;
-            idCard = idCard.slice(5);
-            let foundIndex = arr.findIndex((n) => n._id == idCard);
-            console.log(arr[foundIndex]);
-            $('.popup-code').css("display", "flex")
-            $('.popup-color').css("display", "flex")
-            $('.popup-wrap').css("display", "flex")
-            $('.popup-description').css("display", "flex")
-            $('.popup-plus').css("display", "flex")
-            $('.popupImage').css("background-image", "url(" + arr[foundIndex].main_img + ")")
-            $('.popup-name').html('<b>' + arr[foundIndex].name + '</b>')
-            $('.popup-price').html('<b>' + arr[foundIndex].price + ' грн.</b>')
-            $('.popup-color').html('<b>Колір:</b> ' + arr[foundIndex].color)
-            if (arr[foundIndex].category == "футболки" || arr[foundIndex].category == 'худі'){
-                $('.code-popup').html(arr[foundIndex].code)
-                $('.popup-sizes').html('<b>Розміри:</b> ' + arr[foundIndex].sizes)
-                $('.popup-colors').html('<b>Кольори:</b> ' + arr[foundIndex].colors)
-                $('.popup-cloth').html('<b>Тканина:</b> ' + arr[foundIndex].cloth)
-                $('.popup-density').html('<b>Щільність:</b> ' + arr[foundIndex].density)
-            } else if (arr[foundIndex].category == 'кепки'){
-                $('.popup-sizes').html('<b>Розміри:</b> ' + arr[foundIndex].sizes)
-                $('.popup-colors').html('<b>Кольори:</b> ' + arr[foundIndex].colors)
-                $('.popup-cloth').html('<b>Тканина:</b> ' + arr[foundIndex].cloth)
-            } else if (arr[foundIndex].category == "аксесуари"){
-                $('.popup-code').css("display", "none")
-                $('.popup-color').css("display", "none")
-                $('.popup-sizes').html('<b>Для документів: </b> ' + arr[foundIndex].documents)
-                $('.popup-colors').html('<b>Колір: </b> ' + arr[foundIndex].color)
-                $('.popup-cloth').html('<b>Матеріал: </b> ' + arr[foundIndex].material)
-                $('.popup-density').html('<b>Друк: </b> ' + arr[foundIndex].print)
-                $('.popup-description').css("display", "none")
-                $('.popup-plus').css("display", "none")
-            }
-        });
-
-    })
-
     return(
 
         <div className="popup-wrap">
@@ -81,15 +26,9 @@ function Popup (){
                     <p className="popup-color"></p>
                     <div className="row_inp_btn">
                         <div className="inp">
-                            <button className="minus" onClick={function(){
-                                if (count > 1){
-                                    setCount(prevCount => prevCount - 1);
-                                }
-                            }}>-</button>
+                            <button className="minus">-</button>
                             <input type="text" value={count} />
-                            <button className="plus" onClick={function(){
-                                setCount(prevCount => prevCount + 1);
-                            }}>+</button>
+                            <button className="plus">+</button>
                         </div>
                         <div className="btn-box">
                             <button className="add_cart">ДОДАТИ ДО КОШИКА</button>
