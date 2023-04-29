@@ -11,7 +11,7 @@ const ProductList=({filteredProducts})=>{
             const documentsProduct=product.documents;
             const printProduct=product.print;
                     return(
-                        <div className="product__ProductList" id={"block" + product._id} onClick={PopUpFunc(index)} key={index}>
+                        <div className="product__ProductList" id={"block" + product._id} onClick={alert(index)} key={index}>
                           <img src={product.main_img} alt={product.name} width="360px" height="360px"></img>
                           <div className="bottom__product__ProductList">
                             <div className="txt__bottom__product__ProductList">
