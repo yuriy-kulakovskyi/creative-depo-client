@@ -20,13 +20,13 @@ function Popup (){
                 console.log(arr)
             });
 
-        // const elementsBlock = document.getElementsByClassName("product__ProductList")
+        let elementsBlock = document.getElementById("product__ProductList")
 
 
 
-        // elementsBlock.addEventListener("click", function(e){
-        //     alert(e.target.id);
-        // });
+        elementsBlock.onclick = function(e){
+            alert(e.target.id)
+        }
 
     })
 
