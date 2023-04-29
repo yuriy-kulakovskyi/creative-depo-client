@@ -20,13 +20,13 @@ function Popup (){
                 console.log(arr)
             });
 
-        const elementsBlock = document.getElementsByClassName("product__ProductList")
+        // const elementsBlock = document.getElementsByClassName("product__ProductList")
 
-        // $('.product__ProductList').click(function(e){
-        //     alert(e.target.id)
+
+
+        // elementsBlock.addEventListener("click", function(e){
+        //     alert(e.target.id);
         // });
-
-        elementsBlock.addEventListener("click", function(e){alert(e.target.id);});
 
     })
 
