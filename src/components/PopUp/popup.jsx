@@ -3,6 +3,8 @@ import { ReactDOM } from "react";
 
 import { useState, useEffect } from "react";
 
+import $ from 'jquery'
+
 function Popup (){
 
     const [count, setCount] = useState(1)
