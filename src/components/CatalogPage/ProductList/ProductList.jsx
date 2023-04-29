@@ -36,7 +36,7 @@ const ProductList=({filteredProducts})=>{
                             {printProduct && <p className="print__bottom__product__ProductList"><span>Друк:</span>{printProduct}</p>}
                             <p className="price__bottom__product__ProductList">{product.price} {product.currency}.</p>
                             </div>
-                            <ProductBtn id={"block" + product._id} onClick={PopUpFunc()}/>
+                            <ProductBtn onClick={PopUpFunc(index)}/>
                           </div>
                         </div>
                     )
