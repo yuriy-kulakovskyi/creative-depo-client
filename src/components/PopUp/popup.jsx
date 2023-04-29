@@ -20,7 +20,7 @@ function Popup (){
                     <div className="row_inp_btn">
                         <div className="inp">
                             <button className="minus">-</button>
-                            <input type="text" value={count} />
+                            <input type="text" />
                             <button className="plus">+</button>
                         </div>
                         <div className="btn-box">
