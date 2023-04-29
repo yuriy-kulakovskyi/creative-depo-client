@@ -5,26 +5,30 @@ import { ReactDOM } from "react";
 
 function Popup (){
 
-    // const [count, setCount] = useState(1)
+    const [count, setCount] = useState(1)
 
-    // useEffect(() => {
+    useEffect(() => {
 
-    //     let arr = [1, 2]
+        let arr = [1, 2]
 
-    //     fetch('https://creative-depo.onrender.com/products')
-    //         .then((response) => {
-    //             return response.json();
-    //         })
-    //         .then((data) => {
-    //             arr = data
-    //             console.log(arr)
-    //         });
+        fetch('https://creative-depo.onrender.com/products')
+            .then((response) => {
+                return response.json();
+            })
+            .then((data) => {
+                arr = data
+                console.log(arr)
+            });
 
-    //     $('.product__ProductList').click(function(e){
-    //         alert(e.target.id)
-    //     });
+        const elementsBlock = document.getElementsByClassName("product__ProductList")
 
-    // })
+        // $('.product__ProductList').click(function(e){
+        //     alert(e.target.id)
+        // });
+
+        elementsBlock.addEventListener("click", function(e){alert(e.target.id);});
+
+    })
 
     return(
 
