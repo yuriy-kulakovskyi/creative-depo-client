@@ -20,9 +20,9 @@ function PopUpFunc (index){
 
     let element = document.getElementById("block" + arr[index]._id)
 
-    element.addEventListener("click", function(e){
+    element.onclick = (e) => {
         console.log(e.target.id)
-    })
+    }
 
     // $('.popup-code').css("display", "flex")
     // $('.popup-color').css("display", "flex")
