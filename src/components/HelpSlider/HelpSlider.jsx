@@ -1,16 +1,24 @@
 import { register } from 'swiper/element/bundle';
+import { useState, useCallback } from 'react';
 
 import "./HelpSlider.css"
 import sliderData from "./slides.json"
 import prevSvg from "./images/previous.svg"
 import nextSvg from "./images/next.svg"
+import HelpSliderPopup from '../HelpSliderPopup/HelpSliderPopup';
 
 register();
 
 function HelpSlider() {
+    let [popupHidden, setPopupHidden] = useState(true);
+    let slideCallback = useCallback(()=>{
+        console.log(popupHidden)
+        setPopupHidden(!popupHidden)
+    }, [popupHidden])
     return (
         <section className="HelpSlider" id='HelpSlider'>
             <div className="HelpSlider-container">
+                <HelpSliderPopup hidden={popupHidden} hideCallback={slideCallback}/>
                 <swiper-container
                     effect="slide"
                     slides-per-view="1.6"
@@ -19,7 +27,7 @@ function HelpSlider() {
                     simulate-touch="false"
                     autoplay-delay="5000"
                     direction="horizontal"
-                    speed="500"
+                    speed="400"
                     loop="true"
                     navigation="true"
                     pagination="true"
@@ -36,7 +44,7 @@ function HelpSlider() {
                         sliderData.map(item =>
                             <swiper-slide key={item.id}>
                                 <div className="HelpSlider-slide-inner">
-                                    <img className="HelpSlider-slide-image" src={item.image} alt={`Slide${item.id}`} />
+                                    <img onClick={slideCallback} className="HelpSlider-slide-image" src={item.image} alt={`Slide${item.id}`} />
                                 </div>
                             </swiper-slide>
                         )

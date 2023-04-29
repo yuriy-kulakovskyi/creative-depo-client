@@ -1,2 +1,86 @@
 @import "../mixins.scss";
-@import "../variables.scss"
+@import "../variables.scss";
+.HelpSliderPopup {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+    background: $fontBlack;
+    @include flex(center, center, row);
+    .HelpSliderPopup-controlls {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 2000;
+        .HelpSliderPopup-button {
+            height: auto;
+            aspect-ratio: 1/1;
+            border: none;
+            outline: none;
+            @include flex(center, center, row);
+            @include button(#00000050, #ffffff, 50%, 15px);
+            cursor: pointer;
+            transition: opacity 0.3s;
+            -webkit-transition: opacity 0.3s;
+            -moz-transition: opacity 0.3s;
+            -ms-transition: opacity 0.3s;
+            -o-transition: opacity 0.3s;
+            &:hover {
+                opacity: 0.9;
+            }
+            img {
+                height: 20px;
+                width: 20px;
+            }
+        }
+    }
+    .HelpSliderPopup-container {
+        width: 100%;
+        height: 100%;
+        @include flex(center, center, row);
+        .HelpSliderPopup-slider-nav {
+            .HelpSliderPopup-slider-btn {
+                position: absolute;
+                top: 50%;
+                z-index: 2000;
+                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                @include button(#00000050, #ffffff, 50%, 10px);
+                &-next {
+                    right: 10px;
+                }
+                &-previous {
+                    left: 10px;
+                }
+                img {
+                    height: 25px;
+                    width: 25px;
+                    object-fit: contain;
+                }
+            }
+        }
+        .HelpSliderPopup-content {
+            height: 100vh;
+            width: 100%;
+            @include flex(center, center, row);
+            .HelpSliderPopup-zoomable {
+                @include flex(center, center, row);
+                img {
+                    height: calc(100vh - 30px);
+                    width: 100%;
+                    object-fit: contain;
+                    cursor: zoom-in;
+                }
+            }
+        }
+    }
+    &[data-hidden="true"] {
+        opacity: 0;
+        z-index: -5000;
+    }
+}
