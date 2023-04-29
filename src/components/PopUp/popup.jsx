@@ -6,11 +6,11 @@ import $ from 'jquery'
 
 function Popup (){
 
-    // const [count, setCount] = useState(1)
-
-    let arr = [1, 2]
+    const [count, setCount] = useState(1)
 
     useEffect(() => {
+
+        let arr = [1, 2]
 
         fetch('https://creative-depo.onrender.com/products')
             .then((response) => {
