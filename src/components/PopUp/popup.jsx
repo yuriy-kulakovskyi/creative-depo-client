@@ -20,13 +20,7 @@ function Popup (){
                 console.log(arr)
             });
 
-        let elementsBlock = document.getElementById("product__ProductList")
-
-
-
-        elementsBlock.onclick = function(e){
-            alert(e.target.id)
-        }
+        
 
     })
 
