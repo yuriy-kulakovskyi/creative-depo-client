@@ -6,26 +6,26 @@ import $ from 'jquery'
 
 function Popup (){
 
-    const [count, setCount] = useState(1)
+    // const [count, setCount] = useState(1)
 
     let arr = [1, 2]
 
-    // useEffect(() => {
+    useEffect(() => {
 
-    //     fetch('https://creative-depo.onrender.com/products')
-    //         .then((response) => {
-    //             return response.json();
-    //         })
-    //         .then((data) => {
-    //             arr = data
-    //             console.log(arr)
-    //         });
+        fetch('https://creative-depo.onrender.com/products')
+            .then((response) => {
+                return response.json();
+            })
+            .then((data) => {
+                arr = data
+                console.log(arr)
+            });
 
-        // $('.product__ProductList').click(function(e){
-        //     alert(e.target.id)
-        // });
+        $('.product__ProductList').click(function(e){
+            alert(e.target.id)
+        });
 
-    // })
+    })
 
     return(
 
