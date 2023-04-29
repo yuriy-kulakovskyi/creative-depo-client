@@ -4,7 +4,9 @@ import { ReactDOM } from "react";
 
 function PopUpFunc (index){
 
-    alert(index)
+    // alert(index)
+
+    
     let arr = []
 
     fetch('https://creative-depo.onrender.com/products')
@@ -13,8 +15,14 @@ function PopUpFunc (index){
     })
     .then((data) => {
         arr = data
-        console.log(arr[index]._id)
+        // console.log(arr[index]._id)
     });
+
+    let element = document.getElementById("block" + arr[index]._id)
+
+    element.addEventListener("click", function(e){
+        console.log(e.target.id)
+    })
 
     // $('.popup-code').css("display", "flex")
     // $('.popup-color').css("display", "flex")
