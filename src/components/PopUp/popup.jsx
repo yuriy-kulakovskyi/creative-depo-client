@@ -1,11 +1,7 @@
 import React from "react";
 import { ReactDOM } from "react";
 
-import jquery from 'jquery'
-import $ from 'jquery'
-
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 function Popup (){
 
