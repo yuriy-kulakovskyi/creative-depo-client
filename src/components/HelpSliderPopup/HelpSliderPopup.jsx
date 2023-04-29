@@ -38,10 +38,10 @@ function HelpSliderPopup(props) {
                 >
                     {
                         sliderData.map(item =>
-                            <swiper-slide lazy="true" key={item.id}>
+                            <swiper-slide key={item.id}>
                                 <div className="HelpSliderPopup-content">
                                     <div className="HelpSliderPopup-zoomable">
-                                        <img loading="lazy" src={item.image} alt="slider item" />
+                                        <img src={item.image} alt="slider item" />
                                     </div>
                                 </div>
                             </swiper-slide>

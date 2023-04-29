@@ -55,10 +55,10 @@ function MainPage() {
                     </div>
                     {
                         slidesData.map(item =>
-                            <swiper-slide lazy="true" key={item.id}>
+                            <swiper-slide key={item.id}>
                                 <div className="MainPage-slide-inner">
                                     <button className="MainPage-slideBtn" onClick={() => moveTo(`${item.action}`)}>
-                                        <img loading="lazy" src={setAdaptivityImage(item)} alt={`Slide${item.id}`} />
+                                        <img src={setAdaptivityImage(item)} alt={`Slide${item.id}`} />
                                     </button>
                                 </div>
                             </swiper-slide>

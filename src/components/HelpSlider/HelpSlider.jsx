@@ -42,9 +42,9 @@ function HelpSlider() {
                 >
                     {
                         sliderData.map(item =>
-                            <swiper-slide lazy="true" key={item.id}>
+                            <swiper-slide key={item.id}>
                                 <div className="HelpSlider-slide-inner">
-                                    <img loading="lazy" onClick={slideCallback} className="HelpSlider-slide-image" src={item.image} alt={`Slide${item.id}`} />
+                                    <img onClick={slideCallback} className="HelpSlider-slide-image" src={item.image} alt={`Slide${item.id}`} />
                                 </div>
                             </swiper-slide>
                         )
