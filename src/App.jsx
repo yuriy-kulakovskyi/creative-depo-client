@@ -31,7 +31,7 @@ function App() {
       {/* Footer component */}
       <Footer />
 
-      {/* <PopUp/> */}
+      <PopUp/>
 
     </div>
   );
