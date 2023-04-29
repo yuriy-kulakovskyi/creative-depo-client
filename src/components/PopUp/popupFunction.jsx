@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ReactDOM } from "react";
 
+import $ from 'jquery'
 
 function PopUpFunc (index){
 
@@ -18,11 +19,11 @@ function PopUpFunc (index){
         // console.log(arr[index]._id)
     });
 
-    let element = document.getElementById("block" + arr[index]._id)
+    const element = document.getElementById("block" + arr[index]._id)
 
-    element.onclick = (e) => {
+    $(element).click(function(e){
         console.log(e.target.id)
-    }
+    })
 
     // $('.popup-code').css("display", "flex")
     // $('.popup-color').css("display", "flex")
