@@ -35,35 +35,35 @@ function Popup (){
             idCard = idCard.slice(5);
             let foundIndex = arr.findIndex((n) => n._id == idCard);
             console.log(arr[foundIndex]);
-            $('.popup-code').css("display", "flex")
-            $('.popup-color').css("display", "flex")
-            $('.popup-wrap').css("display", "flex")
-            $('.popup-description').css("display", "flex")
-            $('.popup-plus').css("display", "flex")
-            $('.popupImage').css("background-image", "url(" + arr[foundIndex].main_img + ")")
-            $('.popup-name').html('<b>' + arr[foundIndex].name + '</b>')
-            $('.popup-price').html('<b>' + arr[foundIndex].price + ' грн.</b>')
-            $('.popup-color').html('<b>Колір:</b> ' + arr[foundIndex].color)
-            if (arr[foundIndex].category == "футболки" || arr[foundIndex].category == 'худі'){
-                $('.code-popup').html(arr[foundIndex].code)
-                $('.popup-sizes').html('<b>Розміри:</b> ' + arr[foundIndex].sizes)
-                $('.popup-colors').html('<b>Кольори:</b> ' + arr[foundIndex].colors)
-                $('.popup-cloth').html('<b>Тканина:</b> ' + arr[foundIndex].cloth)
-                $('.popup-density').html('<b>Щільність:</b> ' + arr[foundIndex].density)
-            } else if (arr[foundIndex].category == 'кепки'){
-                $('.popup-sizes').html('<b>Розміри:</b> ' + arr[foundIndex].sizes)
-                $('.popup-colors').html('<b>Кольори:</b> ' + arr[foundIndex].colors)
-                $('.popup-cloth').html('<b>Тканина:</b> ' + arr[foundIndex].cloth)
-            } else if (arr[foundIndex].category == "аксесуари"){
-                $('.popup-code').css("display", "none")
-                $('.popup-color').css("display", "none")
-                $('.popup-sizes').html('<b>Для документів: </b> ' + arr[foundIndex].documents)
-                $('.popup-colors').html('<b>Колір: </b> ' + arr[foundIndex].color)
-                $('.popup-cloth').html('<b>Матеріал: </b> ' + arr[foundIndex].material)
-                $('.popup-density').html('<b>Друк: </b> ' + arr[foundIndex].print)
-                $('.popup-description').css("display", "none")
-                $('.popup-plus').css("display", "none")
-            }
+            // $('.popup-code').css("display", "flex")
+            // $('.popup-color').css("display", "flex")
+            // $('.popup-wrap').css("display", "flex")
+            // $('.popup-description').css("display", "flex")
+            // $('.popup-plus').css("display", "flex")
+            // $('.popupImage').css("background-image", "url(" + arr[foundIndex].main_img + ")")
+            // $('.popup-name').html('<b>' + arr[foundIndex].name + '</b>')
+            // $('.popup-price').html('<b>' + arr[foundIndex].price + ' грн.</b>')
+            // $('.popup-color').html('<b>Колір:</b> ' + arr[foundIndex].color)
+            // if (arr[foundIndex].category == "футболки" || arr[foundIndex].category == 'худі'){
+            //     $('.code-popup').html(arr[foundIndex].code)
+            //     $('.popup-sizes').html('<b>Розміри:</b> ' + arr[foundIndex].sizes)
+            //     $('.popup-colors').html('<b>Кольори:</b> ' + arr[foundIndex].colors)
+            //     $('.popup-cloth').html('<b>Тканина:</b> ' + arr[foundIndex].cloth)
+            //     $('.popup-density').html('<b>Щільність:</b> ' + arr[foundIndex].density)
+            // } else if (arr[foundIndex].category == 'кепки'){
+            //     $('.popup-sizes').html('<b>Розміри:</b> ' + arr[foundIndex].sizes)
+            //     $('.popup-colors').html('<b>Кольори:</b> ' + arr[foundIndex].colors)
+            //     $('.popup-cloth').html('<b>Тканина:</b> ' + arr[foundIndex].cloth)
+            // } else if (arr[foundIndex].category == "аксесуари"){
+            //     $('.popup-code').css("display", "none")
+            //     $('.popup-color').css("display", "none")
+            //     $('.popup-sizes').html('<b>Для документів: </b> ' + arr[foundIndex].documents)
+            //     $('.popup-colors').html('<b>Колір: </b> ' + arr[foundIndex].color)
+            //     $('.popup-cloth').html('<b>Матеріал: </b> ' + arr[foundIndex].material)
+            //     $('.popup-density').html('<b>Друк: </b> ' + arr[foundIndex].print)
+            //     $('.popup-description').css("display", "none")
+            //     $('.popup-plus').css("display", "none")
+            // }
         });
 
     })
@@ -84,7 +84,7 @@ function Popup (){
                     <p className="popup-price"></p>
                     <p className="popup-color"></p>
                     <div className="row_inp_btn">
-                        <div className="inp">
+                        {/* <div className="inp">
                             <button className="minus" onClick={function(){
                                 if (count > 1){
                                     setCount(prevCount => prevCount - 1);
@@ -94,7 +94,7 @@ function Popup (){
                             <button className="plus" onClick={function(){
                                 setCount(prevCount => prevCount + 1);
                             }}>+</button>
-                        </div>
+                        </div> */}
                         <div className="btn-box">
                             <button className="add_cart">ДОДАТИ ДО КОШИКА</button>
                         </div>
