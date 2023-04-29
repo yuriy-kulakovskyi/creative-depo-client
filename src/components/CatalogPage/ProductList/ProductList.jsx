@@ -11,7 +11,7 @@ const ProductList=({filteredProducts})=>{
             const documentsProduct=product.documents;
             const printProduct=product.print;
                     return(
-                        <div className="product__ProductList" id={"block block" + product._id} key={index} onClick={PopUpFunc(index)} >
+                        <div className="product__ProductList" key={index} >
                           <img src={product.main_img} alt={product.name} width="360px" height="360px"></img>
                           <div className="bottom__product__ProductList">
                             <div className="txt__bottom__product__ProductList">
@@ -36,7 +36,7 @@ const ProductList=({filteredProducts})=>{
                             {printProduct && <p className="print__bottom__product__ProductList"><span>Друк:</span>{printProduct}</p>}
                             <p className="price__bottom__product__ProductList">{product.price} {product.currency}.</p>
                             </div>
-                            <ProductBtn/>
+                            <ProductBtn id={"block" + product._id} onClick={PopUpFunc()}/>
                           </div>
                         </div>
                     )
