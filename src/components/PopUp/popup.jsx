@@ -28,40 +28,41 @@ function Popup (){
             });
 
         $('.product__ProductList').click(function(e){
-            setCount(1)
-            let idCard  = e.target.id;
-            idCard = idCard.slice(5);
-            let foundIndex = arr.findIndex((n) => n._id == idCard);
-            console.log(arr[foundIndex]);
-            $('.popup-code').css("display", "flex")
-            $('.popup-color').css("display", "flex")
-            $('.popup-wrap').css("display", "flex")
-            $('.popup-description').css("display", "flex")
-            $('.popup-plus').css("display", "flex")
-            $('.popupImage').css("background-image", "url(" + arr[foundIndex].main_img + ")")
-            $('.popup-name').html('<b>' + arr[foundIndex].name + '</b>')
-            $('.popup-price').html('<b>' + arr[foundIndex].price + ' грн.</b>')
-            $('.popup-color').html('<b>Колір:</b> ' + arr[foundIndex].color)
-            if (arr[foundIndex].category == "футболки" || arr[foundIndex].category == 'худі'){
-                $('.code-popup').html(arr[foundIndex].code)
-                $('.popup-sizes').html('<b>Розміри:</b> ' + arr[foundIndex].sizes)
-                $('.popup-colors').html('<b>Кольори:</b> ' + arr[foundIndex].colors)
-                $('.popup-cloth').html('<b>Тканина:</b> ' + arr[foundIndex].cloth)
-                $('.popup-density').html('<b>Щільність:</b> ' + arr[foundIndex].density)
-            } else if (arr[foundIndex].category == 'кепки'){
-                $('.popup-sizes').html('<b>Розміри:</b> ' + arr[foundIndex].sizes)
-                $('.popup-colors').html('<b>Кольори:</b> ' + arr[foundIndex].colors)
-                $('.popup-cloth').html('<b>Тканина:</b> ' + arr[foundIndex].cloth)
-            } else if (arr[foundIndex].category == "аксесуари"){
-                $('.popup-code').css("display", "none")
-                $('.popup-color').css("display", "none")
-                $('.popup-sizes').html('<b>Для документів: </b> ' + arr[foundIndex].documents)
-                $('.popup-colors').html('<b>Колір: </b> ' + arr[foundIndex].color)
-                $('.popup-cloth').html('<b>Матеріал: </b> ' + arr[foundIndex].material)
-                $('.popup-density').html('<b>Друк: </b> ' + arr[foundIndex].print)
-                $('.popup-description').css("display", "none")
-                $('.popup-plus').css("display", "none")
-            }
+            // setCount(1)
+            // let idCard  = e.target.id;
+            // idCard = idCard.slice(5);
+            // let foundIndex = arr.findIndex((n) => n._id == idCard);
+            // console.log(arr[foundIndex]);
+            // $('.popup-code').css("display", "flex")
+            // $('.popup-color').css("display", "flex")
+            // $('.popup-wrap').css("display", "flex")
+            // $('.popup-description').css("display", "flex")
+            // $('.popup-plus').css("display", "flex")
+            // $('.popupImage').css("background-image", "url(" + arr[foundIndex].main_img + ")")
+            // $('.popup-name').html('<b>' + arr[foundIndex].name + '</b>')
+            // $('.popup-price').html('<b>' + arr[foundIndex].price + ' грн.</b>')
+            // $('.popup-color').html('<b>Колір:</b> ' + arr[foundIndex].color)
+            // if (arr[foundIndex].category == "футболки" || arr[foundIndex].category == 'худі'){
+            //     $('.code-popup').html(arr[foundIndex].code)
+            //     $('.popup-sizes').html('<b>Розміри:</b> ' + arr[foundIndex].sizes)
+            //     $('.popup-colors').html('<b>Кольори:</b> ' + arr[foundIndex].colors)
+            //     $('.popup-cloth').html('<b>Тканина:</b> ' + arr[foundIndex].cloth)
+            //     $('.popup-density').html('<b>Щільність:</b> ' + arr[foundIndex].density)
+            // } else if (arr[foundIndex].category == 'кепки'){
+            //     $('.popup-sizes').html('<b>Розміри:</b> ' + arr[foundIndex].sizes)
+            //     $('.popup-colors').html('<b>Кольори:</b> ' + arr[foundIndex].colors)
+            //     $('.popup-cloth').html('<b>Тканина:</b> ' + arr[foundIndex].cloth)
+            // } else if (arr[foundIndex].category == "аксесуари"){
+            //     $('.popup-code').css("display", "none")
+            //     $('.popup-color').css("display", "none")
+            //     $('.popup-sizes').html('<b>Для документів: </b> ' + arr[foundIndex].documents)
+            //     $('.popup-colors').html('<b>Колір: </b> ' + arr[foundIndex].color)
+            //     $('.popup-cloth').html('<b>Матеріал: </b> ' + arr[foundIndex].material)
+            //     $('.popup-density').html('<b>Друк: </b> ' + arr[foundIndex].print)
+            //     $('.popup-description').css("display", "none")
+            //     $('.popup-plus').css("display", "none")
+            // }
+            alert(e.target.id)
         });
 
     })
@@ -69,7 +70,7 @@ function Popup (){
     return(
 
         <div className="popup-wrap">
-            <div className="close-window"><span onClick={function(){
+            {/* <div className="close-window"><span onClick={function(){
                 $('.popup-wrap').css("display", "none")
             }}>+</span></div>
             <div className="block-popup">
@@ -110,7 +111,7 @@ function Popup (){
                         <li>Отримуєш класнючий мерч, заряджений на козацький драйв та перемогу</li>
                     </p>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
