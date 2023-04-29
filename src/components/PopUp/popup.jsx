@@ -20,12 +20,6 @@ function Popup (){
                 console.log(arr)
             });
 
-        let elment = document.getElementById("block")
-
-        elment.addEventListener("click", function(e){
-            alert(e.target.id)
-        })
-
     })
 
     return(

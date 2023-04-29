@@ -5,16 +5,16 @@ import { ReactDOM } from "react";
 function PopUpFunc (index){
 
     alert(index)
-    // let arr = []
+    let arr = []
 
-    // fetch('https://creative-depo.onrender.com/products')
-    // .then((response) => {
-    //     return response.json();
-    // })
-    // .then((data) => {
-    //     arr = data
-    //     console.log(arr)
-    // });
+    fetch('https://creative-depo.onrender.com/products')
+    .then((response) => {
+        return response.json();
+    })
+    .then((data) => {
+        arr = data
+        console.log(arr[index]._id)
+    });
 
     // $('.popup-code').css("display", "flex")
     // $('.popup-color').css("display", "flex")
