@@ -234,7 +234,7 @@
     height: 440px;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
   .HelpPage {
     flex-direction: column;
     justify-content: space-around;
