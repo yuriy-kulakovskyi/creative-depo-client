@@ -27,7 +27,7 @@ function Popup (){
                 console.log(arr)
             });
 
-        $('.block').click(function(e){
+        $('.product__ProductList').click(function(e){
             setCount(1)
             let idCard  = e.target.id;
             idCard = idCard.slice(5);
