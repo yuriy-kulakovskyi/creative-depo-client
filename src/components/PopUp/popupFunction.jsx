@@ -17,11 +17,6 @@ function PopUpFunc (index){
         arr = data
         console.log(arr[index]._id)
     });
-
-    return(
-        <Popup/>
-    )
-
 }
 
 export default PopUpFunc;
