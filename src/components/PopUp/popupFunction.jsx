@@ -3,6 +3,8 @@ import { ReactDOM } from "react";
 
 import $ from 'jquery'
 
+import Popup from './popup';
+
 function PopUpFunc (index){
 
     let arr = []
@@ -16,9 +18,9 @@ function PopUpFunc (index){
         console.log(arr[index]._id)
     });
 
-    document.getElementById("popupWrap").style.display = "flex"
-
-    
+    return(
+        <Popup/>
+    )
 
 }
 
