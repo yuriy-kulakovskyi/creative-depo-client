@@ -6,9 +6,13 @@ import Footer from './components/Footer/Footer';
 // import Header from './components/Header/Header';
 import HeaderWithBurger from './components/Header/HeaderWithBurger/HeaderWithBurger';
 import HelpSlider from './components/HelpSlider/HelpSlider';
-import PopUp from './components/PopUp/popup'
+import Popup from './components/PopUp/popup';
+import React, {useState} from 'react';
 
 function App() {
+  const [opened, setOpened] = useState(false);
+  const [arr, setArr] = useState([]);
+
   return (
     <div className="App">
       {/* The place to hold components */}
@@ -20,7 +24,9 @@ function App() {
       <MainPage />
 
       {/* CatalogPage component */}
-      <CatalogPage/>
+      <CatalogPage 
+        setArr={setArr}
+        setOpened={setOpened}/>
 
       {/* HelpPage component */}
       <HelpPage />
@@ -31,8 +37,11 @@ function App() {
       {/* Footer component */}
       <Footer />
 
-      <PopUp/>
-
+      <Popup 
+        arr={arr} 
+        opened={opened} 
+        setOpened={setOpened}
+      />
     </div>
   );
 }

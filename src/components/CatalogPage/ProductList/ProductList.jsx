@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import './ProductList.css';
-import ProductBtn from "../ProductBtn/ProductBtn";
 import '../ProductBtn/ProductBtn.css';
 
-const ProductList=({filteredProducts})=>{
+const ProductList=({filteredProducts, setOpened})=>{
+    const PopUpFunc = index =>{
+      setOpened(true);
+    }
+
     return(
         <section className="ProductList">
         {filteredProducts&&filteredProducts.map((product, index)=>{
@@ -36,7 +39,7 @@ const ProductList=({filteredProducts})=>{
                             {printProduct && <p className="print__bottom__product__ProductList"><span>Друк:</span>{printProduct}</p>}
                             <p className="price__bottom__product__ProductList">{product.price} {product.currency}.</p>
                             </div>
-                            <button className="btn__bottom__product__ProductList" id={"block"}>Додати у кошик</button>
+                            <button className="btn__bottom__product__ProductList" id={"block"} onClick={() => PopUpFunc(index)}>Додати у кошик</button>
                           </div>
                         </div>
                     )
