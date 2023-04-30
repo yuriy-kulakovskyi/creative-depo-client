@@ -19,7 +19,6 @@ function PopUpFunc (index){
 
     let element = document.getElementById("popupWrap")
 
-    element.style.display = "flex"
 
 }
 
