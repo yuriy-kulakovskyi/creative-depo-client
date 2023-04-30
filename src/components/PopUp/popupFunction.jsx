@@ -3,8 +3,6 @@ import { ReactDOM } from "react";
 
 import $ from 'jquery'
 
-import Popup from './popup';
-
 function PopUpFunc (index){
 
     let arr = []
@@ -17,6 +15,7 @@ function PopUpFunc (index){
         arr = data
         console.log(arr[index]._id)
     });
+
 }
 
 export default PopUpFunc;

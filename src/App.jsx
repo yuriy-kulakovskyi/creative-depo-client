@@ -30,6 +30,9 @@ function App() {
 
       {/* Footer component */}
       <Footer />
+
+      <PopUp/>
+
     </div>
   );
 }

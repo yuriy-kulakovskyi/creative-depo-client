@@ -8,7 +8,7 @@ import ProductList from '../CatalogPage/ProductList/ProductList'
 
 import $ from 'jquery'
 
-function Popup (props){
+function Popup (){
 
     const [count, setCount] = useState(1)
 
