@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ReactDOM } from "react";
+import Popup from './popup';
 
 import $ from 'jquery'
 
@@ -15,6 +16,8 @@ function PopUpFunc (index){
         arr = data
         console.log(arr[index]._id)
     });
+
+    $('.root').append(<Popup/>)
 
 }
 
