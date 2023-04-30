@@ -7,4 +7,4 @@
   <h4 align="center">Web site for Creative Depo</h4>
 </h1>
 
-<img alt="Screenshot" src="./screenshot.png">
+<img alt="Screenshot" src="./screen.png">
