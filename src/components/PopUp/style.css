@@ -7,7 +7,7 @@ body {
   width: 100%;
   min-height: 110vh;
   height: auto;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   flex-direction: column;

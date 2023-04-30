@@ -14,7 +14,7 @@ function Popup (){
 
     return(
 
-        <div className="popup-wrap">
+        <div className="popup-wrap" id="popupWrap">
             <div className="close-window"><span onClick={function(){
                 $('.popup-wrap').css("display", "none")
             }}>+</span></div>
