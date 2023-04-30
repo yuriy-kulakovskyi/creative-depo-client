@@ -17,7 +17,7 @@ function PopUpFunc (index){
         console.log(arr[index]._id)
     });
 
-    $('.root').append(<Popup/>)
+    $('.popup-wrap').css("display", "flex")
 
 }
 
