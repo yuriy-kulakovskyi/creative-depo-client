@@ -7,13 +7,14 @@ body {
   width: 100%;
   min-height: 110vh;
   height: auto;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.7411764706);
-  position: fixed;
+  position: absolute;
   z-index: 10;
+  display: none;
   font-family: "Manrope", sans-serif;
 }
 .popup-wrap .close-window {
