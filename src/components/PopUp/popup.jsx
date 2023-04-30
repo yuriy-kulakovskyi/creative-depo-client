@@ -10,28 +10,7 @@ import $ from 'jquery'
 
 function Popup (){
 
-
     const [count, setCount] = useState(1)
-
-    let arr = []
-
-    useEffect(() => {
-
-        fetch('https://creative-depo.onrender.com/products')
-            .then((response) => {
-                return response.json();
-            })
-            .then((data) => {
-                arr = data
-                console.log(arr)
-            });
-    })
-
-    let element = document.getElementById("block")
-
-    $(element).click(function(){
-        alert('Hello')
-    })
 
     return(
 
@@ -49,7 +28,7 @@ function Popup (){
                     <p className="popup-price"></p>
                     <p className="popup-color"></p>
                     <div className="row_inp_btn">
-                        {/* <div className="inp">
+                        <div className="inp">
                             <button className="minus" onClick={function(){
                                 if (count > 1){
                                     setCount(prevCount => prevCount - 1);
@@ -59,7 +38,7 @@ function Popup (){
                             <button className="plus" onClick={function(){
                                 setCount(prevCount => prevCount + 1);
                             }}>+</button>
-                        </div> */}
+                        </div>
                         <div className="btn-box">
                             <button className="add_cart">ДОДАТИ ДО КОШИКА</button>
                         </div>

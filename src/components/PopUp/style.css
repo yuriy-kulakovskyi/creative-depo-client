@@ -14,7 +14,6 @@ body {
   background-color: rgba(0, 0, 0, 0.7411764706);
   position: absolute;
   z-index: 10;
-  display: none;
   font-family: "Manrope", sans-serif;
 }
 .popup-wrap .close-window {
