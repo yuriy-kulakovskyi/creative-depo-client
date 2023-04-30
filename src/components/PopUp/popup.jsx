@@ -29,9 +29,8 @@ function Popup (){
 
     let element = document.getElementById("block")
 
-    $(element).click(function(e){
-        console.log(e.target.id)
-        alert(e.target.id)
+    $(element).click(function(){
+        alert('Hello')
     })
 
     return(
