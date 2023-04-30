@@ -1,6 +1,6 @@
 import React from "react";
 import './ProductList.css';
-import ProductBtn from "../ProductBtn/ProductBtn";
+import PopUpFunc from "../../PopUp/popupFunction";
 import '../ProductBtn/ProductBtn.css';
 
 const ProductList=({filteredProducts})=>{
@@ -36,7 +36,7 @@ const ProductList=({filteredProducts})=>{
                             {printProduct && <p className="print__bottom__product__ProductList"><span>Друк:</span>{printProduct}</p>}
                             <p className="price__bottom__product__ProductList">{product.price} {product.currency}.</p>
                             </div>
-                            <button className="btn__bottom__product__ProductList" id={"block"}>Додати у кошик</button>
+                            <button className="btn__bottom__product__ProductList" id={"block"} onClick={PopUpFunc(index)}>Додати у кошик</button>
                           </div>
                         </div>
                     )
