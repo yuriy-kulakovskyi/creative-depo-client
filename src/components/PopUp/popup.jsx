@@ -3,7 +3,7 @@ import { ReactDOM } from "react";
 import './style.css'
 import { useState } from "react";
 import { useEffect } from "react";
-
+import ProductList from '../CatalogPage/ProductList/ProductList'
 
 
 import $ from 'jquery'
@@ -29,9 +29,9 @@ function Popup (){
 
     let element = document.getElementById("block")
 
-    $(element).click(function(){
+    element.onclick = function(){
         alert('Hello')
-    })
+    }
 
     return(
 
