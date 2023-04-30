@@ -6,7 +6,6 @@ import { useEffect } from "react";
 
 
 
-import jquery from 'jquery'
 import $ from 'jquery'
 
 function Popup (){
@@ -26,10 +25,11 @@ function Popup (){
                 arr = data
                 console.log(arr)
             });
+    })
 
-        $('.product__ProductList').click(function(e){
-            console.log(e.target.id)
-        })
+    $('.product__ProductList').click(function(e){
+        console.log(e.target.id)
+        alert(e.target.id)
     })
 
     return(
