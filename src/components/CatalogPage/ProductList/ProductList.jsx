@@ -1,9 +1,31 @@
 import React from "react";
 import './ProductList.css';
-import PopUpFunc from "../../PopUp/popupFunction";
 import '../ProductBtn/ProductBtn.css';
 
-const ProductList=({filteredProducts})=>{
+const ProductList=({filteredProducts, setOpened})=>{
+
+    function PopUpFunc (index){
+
+        let arr = []
+    
+        fetch('https://creative-depo.onrender.com/products')
+        .then((response) => {
+            return response.json();
+        })
+        .then((data) => {
+            arr = data
+            console.log(arr[index]._id)
+        });
+    
+        // let element = document.getElementById("popupWrap")
+        alert('Hello')
+        setOpened(true)
+        
+        
+    
+    }
+
+
     return(
         <section className="ProductList">
         {filteredProducts&&filteredProducts.map((product, index)=>{

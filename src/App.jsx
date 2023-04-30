@@ -7,8 +7,13 @@ import Footer from './components/Footer/Footer';
 import HeaderWithBurger from './components/Header/HeaderWithBurger/HeaderWithBurger';
 import HelpSlider from './components/HelpSlider/HelpSlider';
 import Popup from './components/PopUp/popup';
+import React, {useState} from 'react';
 
 function App() {
+  const [opened, setOpened] = useState(false);
+
+  console.log(opened)
+
   return (
     <div className="App">
       {/* The place to hold components */}
@@ -20,7 +25,7 @@ function App() {
       <MainPage />
 
       {/* CatalogPage component */}
-      <CatalogPage/>
+      <CatalogPage setOpened={setOpened}/>
 
       {/* HelpPage component */}
       <HelpPage />
@@ -31,7 +36,7 @@ function App() {
       {/* Footer component */}
       <Footer />
 
-      <Popup/>
+      <Popup opened={opened} setOpened={setOpened}/>
     </div>
   );
 }
