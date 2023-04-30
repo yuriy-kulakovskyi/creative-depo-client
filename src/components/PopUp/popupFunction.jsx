@@ -16,9 +16,9 @@ function PopUpFunc (index){
         console.log(arr[index]._id)
     });
 
-    const popupwrapEl = document.getElementById("popupWrap")
+    document.getElementById("popupWrap").style.display = "flex"
 
-    $(popupwrapEl).css("display", "flex")
+    
 
 }
 
