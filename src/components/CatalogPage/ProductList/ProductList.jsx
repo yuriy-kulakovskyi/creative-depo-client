@@ -1,6 +1,8 @@
 import React from "react";
 import './ProductList.css';
 import ProductBtn from "../ProductBtn/ProductBtn";
+import '../ProductBtn/ProductBtn.css';
+
 const ProductList=({filteredProducts})=>{
     return(
         <section className="ProductList">
@@ -34,7 +36,7 @@ const ProductList=({filteredProducts})=>{
                             {printProduct && <p className="print__bottom__product__ProductList"><span>Друк:</span>{printProduct}</p>}
                             <p className="price__bottom__product__ProductList">{product.price} {product.currency}.</p>
                             </div>
-                            <ProductBtn id={"block" + product._id}/>
+                            <button className="btn__bottom__product__ProductList" id={"block"}>Додати у кошик</button>
                           </div>
                         </div>
                     )
