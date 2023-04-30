@@ -27,7 +27,7 @@ function Popup (){
             });
     })
 
-    $('.product__ProductList').click(function(e){
+    $('.btn__bottom__product__ProductList').click(function(e){
         console.log(e.target.id)
         alert(e.target.id)
     })
