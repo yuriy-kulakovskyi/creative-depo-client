@@ -18,7 +18,7 @@ function PopUpFunc (index){
 
     const popupwrapEl = document.getElementById("popupWrap")
 
-    popupwrapEl.style.display = "flex"
+    $(popupwrapEl).css("display", "flex")
 
 }
 
