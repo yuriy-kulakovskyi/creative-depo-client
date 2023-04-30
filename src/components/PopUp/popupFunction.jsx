@@ -16,10 +16,9 @@ function PopUpFunc (index){
         console.log(arr[index]._id)
     });
 
-    let popupwrapEl = document.getElementById("popupWrap")
+    const popupwrapEl = document.getElementById("popupWrap")
 
     popupwrapEl.style.display = "flex"
-    document.body.style.overflowY = "hidden"
 
 }
 
