@@ -12,35 +12,39 @@ import React, {useState} from 'react';
 function App() {
   const [opened, setOpened] = useState(false);
   const [arr, setArr] = useState([]);
-  const [objInfo, setObjInfo] = useState({})
+  const [objInfo, setObjInfo] = useState({});
+
+  console.log(opened);
   
   return (
-    <div className="App">
-      {/* The place to hold components */}
+    <div className="App" style={{overflow: opened ? "hidden" : "scroll"}}>
+      <div className="block-hidden-overflow" id='block-hidden-overflow'>
+        {/* The place to hold components */}
+        
+        {/* Header component */}
+        <HeaderWithBurger/>
+
+        {/* MainPage component */}
+        <MainPage />
+
+        {/* CatalogPage component */}
+        <CatalogPage 
+          arr={arr}
+          setArr={setArr}
+          setOpened={setOpened}
+          setObjInfo={setObjInfo}
+          objInfo={objInfo}/>
+
+        {/* HelpPage component */}
+        <HelpPage />
+
+        {/* HelpSlider component */}
+        <HelpSlider />
+
+        {/* Footer component */}
+        <Footer />
+      </div>
       
-      {/* Header component */}
-      <HeaderWithBurger/>
-
-      {/* MainPage component */}
-      <MainPage />
-
-      {/* CatalogPage component */}
-      <CatalogPage 
-        arr={arr}
-        setArr={setArr}
-        setOpened={setOpened}
-        setObjInfo={setObjInfo}
-        objInfo={objInfo}/>
-
-      {/* HelpPage component */}
-      <HelpPage />
-
-      {/* HelpSlider component */}
-      <HelpSlider />
-
-      {/* Footer component */}
-      <Footer />
-
       <Popup 
         arr={arr} 
         opened={opened} 

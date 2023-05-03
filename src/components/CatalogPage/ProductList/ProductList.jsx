@@ -40,7 +40,7 @@ const ProductList=({filteredProducts, setOpened, arr, objInfo, setObjInfo})=>{
                             {printProduct && <p className="print__bottom__product__ProductList"><span>Друк:</span>{printProduct}</p>}
                             <p className="price__bottom__product__ProductList">{product.price} {product.currency}.</p>
                             </div>
-                            <button className="btn__bottom__product__ProductList" id={"block"} onClick={() => PopUpFunc(index) }>Додати у кошик</button>
+                            <button className="btn__bottom__product__ProductList" onClick={() => PopUpFunc(index) }>Додати у кошик</button>
                           </div>
                         </div>
                     )

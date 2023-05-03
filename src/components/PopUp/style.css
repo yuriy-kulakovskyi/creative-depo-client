@@ -13,7 +13,7 @@ body {
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.7411764706);
   position: fixed;
-  overflow: auto;
+  overflow: hidden;
   top: 0;
   left: 0;
   z-index: 10;

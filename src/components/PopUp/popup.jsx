@@ -9,14 +9,11 @@ const Popup = ({ opened, setOpened, arr, objInfo }) => {
   console.log(objInfo)
   console.log(arr)
 
-  if (opened == true){
-    $('body').css("overflow", "hidden")
-  } else {
-    $('body').css("overflow", "auto")
-  }
+
+  let block = document.getElementById("block-hidden-overflow")
 
   return (
-    <div style={{overflowY: 'scroll'}}>
+    <div style={{overflow: opened ? "scroll" : "hidden"}}>
       {opened ? 
         <div className="popup-wrap" id="popupWrap">
               <div className="close-window"><span onClick={() => setOpened(false)}>+</span></div>
@@ -30,16 +27,16 @@ const Popup = ({ opened, setOpened, arr, objInfo }) => {
                       <p className="popup-price">{objInfo.price} {objInfo.currency}</p>
                       {objInfo.color === '' ? null:<p className="popup-color">{objInfo.color}</p>}
                       <div className="row_inp_btn">
-                        <div className="inp">
+                        {/* <div className="inp">
                             <button className="minus">-</button>
                             <input type="text" value={count} />
                             <button className="plus">+</button>
-                        </div>
+                        </div> */}
                         <div className="btn-box">
                             <button className="add_cart">ДОДАТИ ДО КОШИКА</button>
                         </div>
                       </div>
-                      { objInfo.sizes == [] || objInfo.sizes == '' ? null: <p className="popup-sizes">Розміри: {objInfo.sizes}</p>}
+                      { objInfo.sizes == [] || objInfo.sizes == '' ? null: <p className="popup-sizes">Розміри: </p>}
                       { objInfo.colors == [] || objInfo.colors == '' ? null: <p className="popup-colors">Кольори: {objInfo.colors}</p>}
                       { objInfo.cloth == '' ? null: <p className="popup-cloth">Тканина: {objInfo.cloth}</p>}
                       { objInfo.density == '' ? null: <p className="popup-density">Щільність: {objInfo.density}</p>}
