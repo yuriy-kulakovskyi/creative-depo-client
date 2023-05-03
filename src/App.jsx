@@ -12,7 +12,8 @@ import React, {useState} from 'react';
 function App() {
   const [opened, setOpened] = useState(false);
   const [arr, setArr] = useState([]);
-
+  const [objInfo, setObjInfo] = useState({})
+  
   return (
     <div className="App">
       {/* The place to hold components */}
@@ -25,8 +26,11 @@ function App() {
 
       {/* CatalogPage component */}
       <CatalogPage 
+        arr={arr}
         setArr={setArr}
-        setOpened={setOpened}/>
+        setOpened={setOpened}
+        setObjInfo={setObjInfo}
+        objInfo={objInfo}/>
 
       {/* HelpPage component */}
       <HelpPage />
@@ -41,7 +45,8 @@ function App() {
         arr={arr} 
         opened={opened} 
         setOpened={setOpened}
-      />
+        setObjInfo={setObjInfo}
+        objInfo={objInfo}/>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import {useState, useEffect, useTransition} from 'react';
 import Navigation from "./Navigation/Navigation";
 import ProductList from "./ProductList/ProductList";
 import './CatalogPage.css';
-function CatalogPage({setOpened, setArr}){
+function CatalogPage({setOpened, setArr, arr, objInfo, setObjInfo}){
     const [isPending, startTransition] = useTransition();
     const [receivedData, setReceivedData]=useState([]);
     const [Categories, setCategories]=useState([]);
@@ -47,7 +47,7 @@ function CatalogPage({setOpened, setArr}){
     return(
         <section className="CatalogPage" id="CatalogPage">
         <Navigation Categories={Categories} CategoryClick={CategoryClick} selectedCategory={selectedCategory}/>
-        {loading ? <div className="loader__CatalogPage"><img src="https://i.stack.imgur.com/kOnzy.gif" alt="loading content" width="60px" height="60px"></img></div>:<ProductList setOpened={setOpened} filteredProducts={filteredProducts}/>}
+        {loading ? <div className="loader__CatalogPage"><img src="https://i.stack.imgur.com/kOnzy.gif" alt="loading content" width="60px" height="60px"></img></div>:<ProductList setObjInfo={setObjInfo} arr={arr} objInfo={objInfo} setOpened={setOpened} filteredProducts={filteredProducts}/>}
         </section>
     )
 }
