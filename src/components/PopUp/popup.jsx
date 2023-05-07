@@ -9,11 +9,10 @@ const Popup = ({ opened, setOpened, arr, objInfo }) => {
   console.log(objInfo)
   console.log(arr)
 
-
   let block = document.getElementById("block-hidden-overflow")
 
   return (
-    <div style={{overflow: opened ? "scroll" : "hidden"}}>
+    <div>
       {opened ? 
         <div className="popup-wrap" id="popupWrap">
               <div className="close-window"><span onClick={() => setOpened(false)}>+</span></div>
@@ -44,16 +43,6 @@ const Popup = ({ opened, setOpened, arr, objInfo }) => {
                       { objInfo.color == '' || objInfo.color == undefined ? null: <p className="popup-color">Колір: {objInfo.color}</p>} 
                       { objInfo.material == '' || objInfo.material == undefined ? null: <p className="popup-material">Матеріал: {objInfo.material}</p>} 
                       { objInfo.print == '' || objInfo.print == undefined ? null: <p className="popup-print">Друк: {objInfo.print}</p>}
-                      {
-                        objInfo.category == 'аксесуари' ? null: <div><p className="popup-description">Ідея зробити такий принт посіла у наші голови щойно ми вирішили створити Українську колекцію. Уявляємо, як після перемоги будемо подорожувати світом у такій футболці або худі, і тим надписом все буде сказано!</p>
-                        <p className="popup-plus"> 
-                            <b>Купуючи цей мерч, ти:</b>
-                            <li>Допомагаєш ЗСУ (частина від прибутку)</li>
-                            <li>Забезпечуєш роботою українців, пов'язаних з виробництвом</li>
-                            <li>Допомагаєш функціонувати та сплачувати податки малому бізнесу — розвиваєш економіку країни</li>
-                            <li>Отримуєш класнючий мерч, заряджений на козацький драйв та перемогу</li>
-                        </p></div> 
-                      }
                   </div>
               </div>
           </div>

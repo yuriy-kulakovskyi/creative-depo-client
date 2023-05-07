@@ -17,12 +17,11 @@ function App() {
   console.log(opened);
   
   return (
-    <div className="App" style={{overflow: opened ? "hidden" : "scroll"}}>
-      <div className="block-hidden-overflow" id='block-hidden-overflow'>
+    <div className="App">
+      {/* Header component */}
+      <HeaderWithBurger/>
+      <div className="block-hidden-overflow" id='block-hidden-overflow' style={{display: opened ? "none" : "block"}}>
         {/* The place to hold components */}
-        
-        {/* Header component */}
-        <HeaderWithBurger/>
 
         {/* MainPage component */}
         <MainPage />
