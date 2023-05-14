@@ -13,6 +13,8 @@ function App() {
   const [opened, setOpened] = useState(false);
   const [arr, setArr] = useState([]);
   const [objInfo, setObjInfo] = useState({});
+  const [count, setCount] = useState(1)
+
 
   console.log(opened);
   
@@ -49,6 +51,8 @@ function App() {
         opened={opened} 
         setOpened={setOpened}
         setObjInfo={setObjInfo}
+        count={count}
+        setCount={setCount}
         objInfo={objInfo}/>
     </div>
   );
