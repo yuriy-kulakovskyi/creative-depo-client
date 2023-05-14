@@ -3,9 +3,8 @@ import './style.css';
 
 import $ from 'jquery'
 
-const Popup = ({ opened, setOpened, arr, objInfo }) => {
+const Popup = ({ opened, setOpened, arr, objInfo, count, setCount }) => {
   
-  const [count, setCount] = useState(1)
   console.log(objInfo)
   console.log(arr)
 
@@ -15,7 +14,7 @@ const Popup = ({ opened, setOpened, arr, objInfo }) => {
     <div>
       {opened ? 
         <div className="popup-wrap" id="popupWrap">
-              <div className="close-window"><span onClick={() => setOpened(false)}>+</span></div>
+          <div className='closed' onClick={() => {setOpened(false); setCount(1)}}><span>X</span></div>
               <div className="block-popup">
                   <div className="left">
                       <div className="popupImage" style={{backgroundImage: "url(" + objInfo.main_img + ")"}}></div>
@@ -26,11 +25,17 @@ const Popup = ({ opened, setOpened, arr, objInfo }) => {
                       <p className="popup-price">{objInfo.price} {objInfo.currency}</p>
                       {objInfo.color === '' ? null:<p className="popup-color">{objInfo.color}</p>}
                       <div className="row_inp_btn">
-                        {/* <div className="inp">
-                            <button className="minus">-</button>
-                            <input type="text" value={count} />
-                            <button className="plus">+</button>
-                        </div> */}
+                        <div className="inp">
+                            <button className="minus" onClick={function(){
+                              if(count > 1){
+                                setCount(count - 1)
+                                }
+                            }}>-</button>
+                            <div className='div_count'>{count}</div>
+                            <button className="plus" onClick={function(){
+                              setCount(count + 1)
+                            }}>+</button>
+                        </div>
                         <div className="btn-box">
                             <button className="add_cart">ДОДАТИ ДО КОШИКА</button>
                         </div>

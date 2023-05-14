@@ -4,6 +4,7 @@ body{
     overflow-x: hidden;
 }
 
+
 .popup-wrap{
     width: 100%;
     min-height: 110vh;
@@ -38,8 +39,23 @@ body{
         }
     }
 
+    .closed{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        color: #fff;
+        z-index: 1;
+        display: flex;
+        justify-content: flex-end;
+        padding: 30px 60px;
+        span{
+            font-size: 40px;
+        }
+    }
+
     .block-popup{
         width: 80%;
+        z-index: 10;
         height: 100%;
         display: flex;
         margin-top: 10vh;
@@ -99,21 +115,15 @@ body{
                     color: #b0b0b0;
                     display: flex;
                     flex-direction: row;
-                    input{
-                        width: 50px;
-                        height: 50px;
+                    
+                    .div_count{
                         display: flex;
-                        border: none;
+                        color: #000;
+                        flex-direction: column;
                         justify-content: center;
                         align-items: center;
-                        flex-direction: column;
-                        text-align: center;
-                        outline: none;
-                        &::-webkit-input-placeholder{
-                            color: #fff;
-                        }
-                        
                     }
+
                     button{
                         width: 50px;
                         height: 50px;
